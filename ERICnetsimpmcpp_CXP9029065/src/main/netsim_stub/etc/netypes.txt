@@ -1,0 +1,1617 @@
+>> .show netypes
+
+The value DEPRECATED in the second column means that
+the NE type is old and should no longer be used.
+It is not shown by the Create NE dialogue in the GUI.
+
+The value TEMPLATE-BASED in the second colum means that
+the NE type has been created from a template.
+
+If the NE type name starts with "TEMPLATE",
+the NE type can only be used to create other NE types.
+NE type templates are not shown by the Create NE
+dialogue, but the NE types created from them are.
+
+ACME 4-0                                     ACME 4.0
+ACME 4-1-1                                   ACME 4.1.1
+ACME 4-1-4                                   ACME 4.1.4
+ACME 5-0                                     ACME 5.0
+ACME 5-1                                     ACME 5.1
+AXD 12-0                                     AXD 12.0
+AXD 7-1                                      AXD 7.1
+AXD 7-5                                      AXD 7.5
+CISCO ASR900                     TEMPLATE-BASED CISCO ASR900
+CISCO ASR9000                    TEMPLATE-BASED CISCO ASR9000
+EDA1200 EDASIM                               EDA1200 EDASIM
+EDA1200 R14B03-EDX               TEMPLATE-BASED ECN430 with EDN612/624 and ESN212 (extended config)
+EDA1200 R14B03-EDX-96            TEMPLATE-BASED ECN430 with EDN612 and EDN624 (96 line config)
+EDA1200 R14B03-big               TEMPLATE-BASED ECN430 with EDN624 and EFN324 (extended config)
+EDA1200 R14B03-orig              TEMPLATE-BASED ECN430 with EDN624 and EFN324 (original config)
+EDA1500 BLM1500                              BLM 1500
+EDA2530 4-25                     TEMPLATE-BASED EDA2530 4.25
+EDA2530 4-31                     TEMPLATE-BASED EDA2530 4.31
+ESC R9A                          TEMPLATE-BASED ESC R9A
+EdgeRouter 6672                  TEMPLATE-BASED EdgeRouter 6672
+FrontHaul 6080                   TEMPLATE-BASED FrontHaul 6080
+FrontHaul-6080 17A-V1            TEMPLATE-BASED FrontHaul-6080_17A-V1
+JUNIPER MX                       TEMPLATE-BASED JUNIPER MX
+MDRS 155EC                       TEMPLATE-BASED MDRS
+MHL-3000 R5-2                    TEMPLATE-BASED MHL 3000 R5.2
+MHL-3000 R5-2-4LINE              TEMPLATE-BASED MHL 3000 R5.2 (4 Lines)
+MHL-3000 R5-2-NM                 TEMPLATE-BASED MHL 3000 R5.2 with NM support
+MHL-3000 R6-0                    TEMPLATE-BASED MHL 3000 R6.0
+MHL-3000 R6-0-40G-Coherent       TEMPLATE-BASED MHL 3000 R6.0 with 40G Coherent card
+MHL-3000 R6-0-CNP                TEMPLATE-BASED MHL 3000 R6.0 CNP
+MHL-3000 R6-0-CNP-NM             TEMPLATE-BASED MHL 3000 R6.0 CNP with NM support
+MHL-3000 R6-0-CNP-SMC            TEMPLATE-BASED MHL 3000 R6.0 CNP with SMC inventory
+MHL-3000 R6-0-NM                 TEMPLATE-BASED MHL 3000 R6.0 with NM support
+MHL-3000 R6-1                    TEMPLATE-BASED MHL 3000 R6.1
+MHL-3000 R6-1-100G               TEMPLATE-BASED MHL 3000 R6.1 with 100G card
+MHL-3000 R6-1-10G                TEMPLATE-BASED MHL 3000 R6.1 with 10G card
+MHL-3000 R6-1-NM                 TEMPLATE-BASED MHL 3000 R6.1 with NM support
+MHL-3000 R6-2-NM                 TEMPLATE-BASED MHL 3000 R6.2 with NM support
+MHL-XC GENERAL                               MHL-XC
+ML 6351-2-4                      TEMPLATE-BASED ML 6351 2.4
+ML 6351-2-5                      TEMPLATE-BASED ML 6351 2.5
+ML 6351-2-6                      TEMPLATE-BASED ML 6351 2.6
+ML 6351-2-7                      TEMPLATE-BASED ML 6351 2.7
+ML 6351-2-8                      TEMPLATE-BASED ML 6351 2.8
+ML 6352-2-5                      TEMPLATE-BASED ML 6352 2.5
+ML 6352-2-6                      TEMPLATE-BASED ML 6352 2.6
+ML 6352-2-7                      TEMPLATE-BASED ML 6352 2.7
+ML 6352-2-8                      TEMPLATE-BASED ML 6352 2.8
+ML 6691-1-0                      TEMPLATE-BASED ML 6691 1.0
+ML 6691-1-1                      TEMPLATE-BASED ML 6691 1.1
+ML 6691-1-1_17A                  TEMPLATE-BASED ML 6691 1.1 17A
+ML-CN 210-1-2                    TEMPLATE-BASED ML-CN 210 R1.2
+ML-CN 500-2-1                    TEMPLATE-BASED ML-CN 500 R2.1
+ML-CN 500-2-2-1                  TEMPLATE-BASED ML-CN 500 R2.2.1
+ML-CN 510-1-0                    TEMPLATE-BASED ML-CN 510 R1.0
+ML-CN 510-1-2                    TEMPLATE-BASED ML-CN 510 R1.2
+ML-CN 510-2-1                    TEMPLATE-BASED ML-CN 510 R2.1
+ML-CN 510-2-3                    TEMPLATE-BASED ML-CN 510 R2.3
+ML-CN 510-2-3-FP                 TEMPLATE-BASED ML-CN 510 R2.3FP
+ML-CN 510-2-4                    TEMPLATE-BASED ML-CN 510 R2.4
+ML-CN 510-2-4-FP                 TEMPLATE-BASED ML-CN 510 2.4FP
+ML-CN 810-2-3                    TEMPLATE-BASED ML-CN 810 R2.3F
+ML-FRONTHAUL 6392-1-0            TEMPLATE-BASED Fronthaul 6392 1.0
+ML-FRONTHAUL 6392-1-1            TEMPLATE-BASED Fronthaul 6392 1.1
+ML-LH 1-3                        TEMPLATE-BASED ML-LH 1-3
+ML-LH 1-5                        TEMPLATE-BASED ML-LH 1-5
+ML-LH 1-6                        TEMPLATE-BASED ML-LH 1-6
+ML-LH 1-6-FP                     TEMPLATE-BASED ML-LH 1-6FP
+ML-LH 2-0                        TEMPLATE-BASED ML-LH 2-0
+ML-PT 2010-1-1                   TEMPLATE-BASED ML-PT 2010 1.1
+ML-PT 2010-1-2                   TEMPLATE-BASED ML-PT 2010 1.2
+ML-PT 2010-2-0                   TEMPLATE-BASED ML-PT 2010 2.0
+ML-PT 2020-2-1                   TEMPLATE-BASED ML-PT 2020 2.1
+ML-PT 2020-2-2                   TEMPLATE-BASED ML-PT 2020 2.2
+ML-PT 2020-2-3                   TEMPLATE-BASED ML-PT 2020 2.3
+ML-PT 2020-2-4                   TEMPLATE-BASED ML-PT 2020 2.4
+ML-PT 2020-2-6                   TEMPLATE-BASED ML-PT 2020 2.6
+ML-PT 2020-2-7                   TEMPLATE-BASED ML-PT 2020 2.7
+ML-PT 2020-2-8                   TEMPLATE-BASED ML-PT 2020 2.8
+ML-PT 3060-1-0                   TEMPLATE-BASED ML-PT 3060 1.0
+ML-PT 3060-1-1                   TEMPLATE-BASED ML-PT 3060 1.1
+ML-PT 6010-1-0                   TEMPLATE-BASED ML-PT 6010 R1.0
+ML-PT 6010-1-1                   TEMPLATE-BASED ML-PT 6010 R1.1
+ML-PT 6010-1-2                   TEMPLATE-BASED ML-PT 6010 R1.2
+ML-PT 6010-1-2-2                 TEMPLATE-BASED ML-PT 6010 R1.2.2
+ML-PT 6020-2-1                   TEMPLATE-BASED ML-PT 6020 2.1
+ML-PT 6020-2-2                   TEMPLATE-BASED ML-PT 6020 2.2
+ML-PT 6020-2-3                   TEMPLATE-BASED ML-PT 6020 2.3
+ML-PT 6020-2-4                   TEMPLATE-BASED ML-PT 6020 2.4
+ML-PT 6020-2-6                   TEMPLATE-BASED ML-PT 6020 2.6
+ML-SP 110-1-2                    TEMPLATE-BASED ML-SP 110 R1.2
+ML-SP 110-1-3                    TEMPLATE-BASED ML-SP 110 R1.3
+ML-SP 110-1-7                    TEMPLATE-BASED ML-SP 110 R1.7
+ML-SP 110-1-7-R14B               TEMPLATE-BASED ML-SP 110 R14B
+ML-SP 110-1-7-packet             TEMPLATE-BASED ML-SP 110 R1.7
+ML-SP 110-1-8                    TEMPLATE-BASED ML-SP 110 R1.8
+ML-SP 110-1-8-R14A-FP2           TEMPLATE-BASED ML-SP 110 R14A FP2
+ML-SP 110-R10C02                 TEMPLATE-BASED ML-SP 110 R10C02
+ML-SP 210-1-2                    TEMPLATE-BASED ML-SP 210 R1.2
+ML-SP 210-1-3                    TEMPLATE-BASED ML-SP 210 R1.3
+ML-SP 210-1-4                    TEMPLATE-BASED ML-SP 210 R1.4
+ML-SP 210-1-5                    TEMPLATE-BASED ML-SP 210 R1.5
+ML-SP 210-1-6                    TEMPLATE-BASED ML-SP 210 R1.6
+ML-SP 210-1-6-oneNe              TEMPLATE-BASED ML-SP 210 1.6 oneNe
+ML-SP 210-1-7                    TEMPLATE-BASED ML-SP 210 R1.7
+ML-SP 210-1-7-R14B               TEMPLATE-BASED ML-SP 210 R14B
+ML-SP 210-1-8                    TEMPLATE-BASED ML-SP 210 R1.8
+ML-SP 210-1-8-R14A-FP2           TEMPLATE-BASED ML-SP 210 R14A FP2
+ML-SP 210-1-9                    TEMPLATE-BASED ML-SP 210 R1.9
+ML-SP 310-1-0                    TEMPLATE-BASED ML-SP 310 R1.0
+ML-SP 310-1-2                    TEMPLATE-BASED ML-SP 310 R1.2
+ML-SP 310-1-3                    TEMPLATE-BASED ML-SP 310 R1.3
+ML-SP 310-1-3-MEFPM              TEMPLATE-BASED ML-SP 310 R1.3
+ML-SP 310-1-4                    TEMPLATE-BASED ML-SP 310 R1.4
+ML-SP 310-1-4-Packet             TEMPLATE-BASED ML-SP 310 R1.4
+ML-SP 310-1-5                    TEMPLATE-BASED ML-SP 310 R1.5
+ML-SP 310-1-6                    TEMPLATE-BASED ML-SP 310 R1.6
+ML-SP 310-1-6-oneNe              TEMPLATE-BASED ML-SP 310 1.6 oneNe
+ML-SP 310-1-7                    TEMPLATE-BASED ML-SP 310 R1.7
+ML-SP 310-1-7-R14B               TEMPLATE-BASED ML-SP 310 R14B
+ML-SP 310-1-7-packet             TEMPLATE-BASED ML-SP 310 R1.7
+ML-SP 310-1-8                    TEMPLATE-BASED ML-SP 310 R1.8
+ML-SP 310-1-8-R14A-FP2           TEMPLATE-BASED ML-SP 310 R14A FP2
+ML-SP 310-R10C06                 TEMPLATE-BASED ML-SP 310 R10C06
+ML-SP 415                        TEMPLATE-BASED ML-SP 415
+ML-SP 415-2-1                    TEMPLATE-BASED ML-SP 415 2.1
+ML-SP 420                        TEMPLATE-BASED ML-SP 420
+ML-SP 420-2-1                    TEMPLATE-BASED ML-SP 420 2-1
+ML-SWITCH 6391-2-5               TEMPLATE-BASED Switch 6391 2.5
+ML-SWITCH 6391-2-6               TEMPLATE-BASED Switch 6391 2.6
+ML-SWITCH 6391-2-7               TEMPLATE-BASED Switch 6391 2.7
+ML-SWITCH 6391-2-8               TEMPLATE-BASED Switch 6391 2.8
+ML-TN 4-0                        TEMPLATE-BASED ML-TN 4.0
+ML-TN 4-1                        TEMPLATE-BASED ML-TN 4.1
+ML-TN 4-2                        TEMPLATE-BASED ML-TN 4.2
+ML-TN 4-3                        TEMPLATE-BASED ML-TN 4.3
+ML-TN 4-3-1-AMM1p                TEMPLATE-BASED ML-TN 4.3.1 AMM1p
+ML-TN 4-3-1-AMM20pB              TEMPLATE-BASED ML-TN 4.3.1 AMM20pB
+ML-TN 4-3-1-AMM6pD               TEMPLATE-BASED ML-TN 4.3.1 AMM6pD
+ML-TN 4-3-1-AMM6pD-ELAN          TEMPLATE-BASED ML-TN 4.3.1 AMM6pD E-LAN
+ML-TN 4-3-1-MLCN                 TEMPLATE-BASED ML-TN 4.3.1 MLCN/CN500
+ML-TN 4-3-FP                     TEMPLATE-BASED ML-TN 4.3FP
+ML-TN 4-4-AMM20pB                TEMPLATE-BASED ML-TN 4.4 AMM20pB
+ML-TN 4-4-FP                     TEMPLATE-BASED ML-TN 4.4 FP
+ML-TN 4-4-FP-AMM20pB-big         TEMPLATE-BASED ML-TN 4.4 FP AMM20pB_big
+ML-TN 4-4-FP-AMM6pD-big          TEMPLATE-BASED ML-TN 4.4 FP AMM6pD_big
+ML-TN 4-4-FP-R22B12              TEMPLATE-BASED ML-TN 4.4 FP R22B12
+ML-TN 5-0-AMM6pD                 TEMPLATE-BASED ML-TN 5.0 AMM 6p D R24A13
+ML-TN 5-1                        TEMPLATE-BASED ML-TN 5.1
+ML-TN 5-1-AMM6pD                 TEMPLATE-BASED ML-TN 5.1 AMM 6pD
+ML-TN 5-2-AMM6pD                 TEMPLATE-BASED ML-TN 5.2
+ML-TN 5-3-AMM6pD                 TEMPLATE-BASED ML-TN 5.3
+ML-TN 5-3-FP-AMM6pD              TEMPLATE-BASED ML-TN 5.3 FP
+ML-TN 5-3-FP2-AMM6pD             TEMPLATE-BASED ML-TN 5.3 FP2 AMM6pD
+ML-TN 5-4-AMM6pD                 TEMPLATE-BASED ML-TN 5.4
+ML-TN 5-4-FP-AMM20pB             TEMPLATE-BASED ML-TN 5.4 FP AMM20pB
+ML-TN 5-4-FP-AMM6pD              TEMPLATE-BASED ML-TN 5.4 FP
+ML-TN 6-0-AMM2pB                 TEMPLATE-BASED ML-TN 6.0 AMM2pB
+OMS1410 2-0                      TEMPLATE-BASED OMS 1410 R2.0
+OMS1460 2-9                      TEMPLATE-BASED OMS 1460 R2.9
+OMS1654 R3-1-4                   TEMPLATE-BASED OMS 1654 R3.1.4
+OMS1654 R4-1                     TEMPLATE-BASED OMS 1654 R4.1
+OMS1664 R3-1-2                   TEMPLATE-BASED OMS 1664 R3.1.2
+OMS1664 R3-1-5                   TEMPLATE-BASED OMS 1664 R3.1.5
+OMS1664 R4-1-burton-big          TEMPLATE-BASED OMS 1664 R4.1 Burton big
+OMS2400 OMS2450-3-1              TEMPLATE-BASED OMS2400 R3.1
+OMS3255 1-0                                  OMS3255 based simulation
+OMS3255 Trace-Replay                         OMS3255 trace-replay based simulation
+OMS800 OMS846-1-3                TEMPLATE-BASED OMS846 R1.3
+OMS800 OMS846-1-4                TEMPLATE-BASED OMS846 R1.4
+OMS800 OMS846-1-5                TEMPLATE-BASED OMS846 R1.5
+OMS800 OMS860-2-2                TEMPLATE-BASED OMS860 R2.2
+OMS800 OMS860-2-3                TEMPLATE-BASED OMS860 R2.3
+OMS800 OMS860-2-4                TEMPLATE-BASED OMS860 R2.4
+OMS800 OMS860-2-4-Large-PMPs     TEMPLATE-BASED OMS860 R2.4 Large PMPs
+OMS800 OMS870-3-2                TEMPLATE-BASED OMS870 R3.2
+OMS800 OMS870-3-3                TEMPLATE-BASED OMS870 R3.3
+OMS800 OMS870-3-4                TEMPLATE-BASED OMS870 R3.4
+OMS800 OMS870-3-4-Large-PMPs     TEMPLATE-BASED OMS870 R3.4 Large PMPs
+OSS FOR-MDRS                                 MDRS Manager test NE
+OSS FOR-MHL-3000                             Simulated OSS suitable for communication with MHL 3000 NEs
+OSS FOR-MHLXC                                Simulated OSS for communication with MHL-XC NEs
+OSS FOR-OMS1600                              Test client for OMS-1600 nodes
+OSS FOR-XRPC                                 Test client for XRPC based nodes
+RADWIN 2000                      TEMPLATE-BASED RADWIN 2000
+RAMAN 1-0                        TEMPLATE-BASED RAMAN
+Router 8801-2-0                  TEMPLATE-BASED SSR 8801
+SPO1110 1-0                      TEMPLATE-BASED SPO 1110 R1.0
+SPO1401 1-0                      TEMPLATE-BASED SPO 1401 R1.0
+SPO1410 3-0                      DEPRECATED  SPO 1410 R3.0
+SPO1410 3-0-NMS                  TEMPLATE-BASED SPO 1410 R3.0
+SPO1410 4-0                      TEMPLATE-BASED SPO 1410 R4.0
+SPO1410 4-0-R14B-CP              TEMPLATE-BASED SPO 1410 14B-CP NM support
+SPO1410 4-0-R14B-DP3             TEMPLATE-BASED SPO 1410 14B-DP3 support
+SPO1410 4-0-R14B-SP2             TEMPLATE-BASED SPO 1410 R4.0
+SPO1410 4-0-R16A036              TEMPLATE-BASED SPO 1410 R4.0
+SPO1410 4-0-R16A061              TEMPLATE-BASED SPO 1410 R16A061 support
+SPO1410 5-0-R16B                 TEMPLATE-BASED SPO 1410 R16B support
+SPO1460 3-0                      DEPRECATED  SPO 1460 R3.0
+SPO1460 3-0-NMS                  TEMPLATE-BASED SPO 1460 R3.0
+SPO1460 4-0                      TEMPLATE-BASED SPO 1460 R4.0
+SPO1460 4-0-R14B-CP-MPLS         TEMPLATE-BASED SPO 1460 R4.0
+SPO1460 4-0-R14B-DP3             TEMPLATE-BASED SPO 1460 R4.0
+SPO1460 4-0-R14B-MPLS            TEMPLATE-BASED SPO 1460 R14B NM support
+SPO1460 4-0-R14B-NMS             TEMPLATE-BASED SPO 1460 R14B NM support
+SPO1460 4-0-R14B-SDH             TEMPLATE-BASED SPO 1460 R14B NM support
+SPO1460 4-0-R14B-SP2             TEMPLATE-BASED SPO 1460 R4.0
+SPO1460 4-0-R16A045              TEMPLATE-BASED SPO 1460 R16A support
+SPO1460 4-0-R16A061              TEMPLATE-BASED SPO 1460 R4.0
+SPO1460 5-0-R16B                 TEMPLATE-BASED SPO 1460 R16B
+SPO1480 1-0                      TEMPLATE-BASED SPO 1480 R1.0
+SPO1485 1-0                      TEMPLATE-BASED SPO 1485 R1.0
+SPO1485 1-1                      TEMPLATE-BASED SPO 1485 R1.1
+SSR 420                          TEMPLATE-BASED SSR 420
+SSR 8004                         TEMPLATE-BASED SSR 8004
+SSR 8010                         TEMPLATE-BASED SSR 8010
+SSR 8020                         TEMPLATE-BASED SSR 8020
+TMUX 4-3                                     TMUX 4.3
+Tellabs 8630                     TEMPLATE-BASED Tellabs 8630
+vBNG R-3-1                       TEMPLATE-BASED vBNG R3.1
+vBNG R3-1                        TEMPLATE-BASED vBNG R3.1
+TEMPLATE CISCO ASR900                        CISCO ASR900
+TEMPLATE CISCO ASR9000                       CISCO ASR9000
+TEMPLATE EDA1200 NEW                         EDA1200 NEW
+TEMPLATE EDA2530 4                           EDA2530
+TEMPLATE ESC R9A                             SSR-IPOS 420
+TEMPLATE EdgeRouter 6672                     EdgeRouter 6672
+TEMPLATE FrontHaul 6080                      FrontHaul 6080
+TEMPLATE FrontHaul-6080 17A-V1               FrontHaul-6080_17A-V1
+TEMPLATE JUNIPER MX                          JUNIPER MX
+TEMPLATE MDRS ALL                            MDRS
+TEMPLATE MHL-3000 R5                         MHL 3000 R5.2
+TEMPLATE MHL-3000 R6                         MHL 3000 R6.0
+TEMPLATE MHL-3000 R6-1                       MHL 3000 R6.1
+TEMPLATE MHL-3000 R6-14B                     MHL 3000 R6.2
+TEMPLATE ML 6691                             ML 6691
+TEMPLATE ML-CN 500                           ML-CN 500
+TEMPLATE ML-CN 510                           ML-CN 510
+TEMPLATE ML-CN 510-2-3                       ML-CN 510
+TEMPLATE ML-CN 510-2-4                       ML-CN 510
+TEMPLATE ML-CN 510-2-4-FP                    ML-CN 510 2.4FP
+TEMPLATE ML-LH 1-6-FP                        ML-TN
+TEMPLATE ML-LH 2-0                           ML-TN
+TEMPLATE ML-PT 2010-1-1                      ML-PT 2010 1.1
+TEMPLATE ML-PT 2010-1-2                      ML-PT 2010 1.2
+TEMPLATE ML-PT 6010                          ML-PT 6010
+TEMPLATE ML-SP 415                           ML-SP 415
+TEMPLATE ML-SP 420                           ML-SP 420
+TEMPLATE ML-TN 4-0                           ML-TN
+TEMPLATE ML-TN 4-3-1                         ML-TN 4.3.1
+TEMPLATE ML-TN 4-3-FP                        ML-TN 4.3FP
+TEMPLATE ML-TN 4-4                           ML-TN 4.4
+TEMPLATE ML-TN 4-4-FP                        ML-TN 4.4 FP
+TEMPLATE ML-TN 5-0                           ML-TN 5.0
+TEMPLATE ML-TN 5-1                           ML-TN 5.1
+TEMPLATE ML-TN 5-2                           ML-TN 5.2
+TEMPLATE ML-TN 5-3                           ML-TN 5.3
+TEMPLATE ML-TN 5-3-FP                        ML-TN 5.3FP
+TEMPLATE ML-TN 5-3-FP2                       ML-TN 5.3FP2
+TEMPLATE ML-TN 5-4                           ML-TN 5.4
+TEMPLATE ML-TN 5-4-FP                        ML-TN 5.4 FP
+TEMPLATE ML-TN 5-4-FP-AMM20pB                ML-TN 5.4FP AMM20pB
+TEMPLATE ML-TN 6-0-AMM2pB                    ML-TN 6.0 AMM2pB
+TEMPLATE OMS1400 ALL                         no_value
+TEMPLATE OMS1400 OMS1410-2-0                 no_value
+TEMPLATE OMS1600 3-1                         OMS 1664
+TEMPLATE OMS2400 ALL                         OMS2400
+TEMPLATE OMS846 ALL                          OMS846
+TEMPLATE OMS860 ALL                          OMS860
+TEMPLATE OMS870 ALL                          OMS870
+TEMPLATE OneNE ALL                           no_value
+TEMPLATE PT2010 ALL                          no_value
+TEMPLATE PT2020 ALL                          no_value
+TEMPLATE PT3060 ALL                          no_value
+TEMPLATE PT3060-1 ALL                        no_value
+TEMPLATE PT6020 ALL                          no_value
+TEMPLATE RADWIN 2000                         RADWIN 2000
+TEMPLATE RAMAN 1-0                           RAMAN
+TEMPLATE Router 8801-2-0                     Router8801 R2-0
+TEMPLATE SP110 1-7                           no_value
+TEMPLATE SP110 1-8                           no_value
+TEMPLATE SP110 ALL                           no_value
+TEMPLATE SP210-310 ALL                       no_value
+TEMPLATE SP310 1-7                           no_value
+TEMPLATE SPO1400 ALL                         no_value
+TEMPLATE SPO1400 FROM-4-0                    no_value
+TEMPLATE SPO1400 R14B                        no_value
+TEMPLATE SPO1400 R16A045                     no_value
+TEMPLATE SSR 420                             SSR-IPOS 420
+TEMPLATE SSR 8004                            SSR 8004
+TEMPLATE SSR 8010                            SSR 8010
+TEMPLATE SSR 8020                            SSR 8020
+TEMPLATE TELLABS 8600                        no_value
+TEMPLATE vBNG R3-1                           vBNG R3.1
+EWM A1                                       BELAIR EWM A1
+ADC 1                                        ADC
+AECID 16                                     AECID 16 NE
+AF 2-2                                       Sun based AF 2.2 NE
+AF 3-0                                       Sun based AF 3.0 NE
+AF 3-0-ESA                                   Sun based AF 3.0 NE with ESA FM support
+AFG 16-1                                     AFG 16.1 NE
+AFG 17                                       AFG 17 NE
+AFG 2-0                                      AFG 2.0 NE
+AFG 3-0                                      AFG 3.0 NE
+AFG 3-1                                      AFG 3.1 NE
+AFG 3-2                                      AFG 3.2 NE
+AFG 5-0                                      AFG 5.0 NE
+AIR 3-2                                      Sun based AIR 3.2 NE
+AIR 4-0                                      Sun based AIR 4.0 NE
+AIR 4-0-ESA                                  Sun based AIR 4.0 NE with ESA FM support
+ALARM-EXP WPP                                EXPERIMENTAL WPP NE FOR ALARM SENDING.
+BCD 1-0-7-ESA                                Sun based BCD 1.0.7 NE with ESA FM support
+BCS-M 2-1                                    OMP based BCS-M 2.1 NE
+BCS-VC 2-1                                   OMP  based BCS-VC 2.1 NE
+BDB 16A                                      CBA based BDB 16A NE
+BDB 16B                                      CBA based BDB 16B NE
+CCN 5-10-3                                   TSP 6.0 based CCN 5.10.3 NE
+CCN 5-11-0                                   TSP 6.0 based CCN 5.11.0 NE
+CCN 5-4                                      TSP 6.0 based CCN 5.4 NE
+CCN 5-5                                      TSP 6.0 based CCN 5.5 NE
+CCN 5-5-ESA                                  Sun based CCN 5.5 NE with ESA FM support
+CCN 5-8                                      TSP 6.0 based CCN 5.8 NE
+CEE 16A-1                                    CEE 16A
+CEE 16A-V1                                   CBA based CEE 16A
+CEE 6                                        CBA based CEE 16A
+CPG 10A                                      CPG 10A
+CPG 10A-FP01                                 CPG 10A-FP01
+CPG 10A-FP02                                 CPG 10A-FP02
+CPG 10B                                      CPG 10B
+CPG 11A                                      CPG 11A
+CPG 11B                                      CPG 11B
+CPG 11B-FP01                                 CPG 11B-FP01
+CPG 12A                                      CPG 12A
+CPG 13A                                      CPG 13A
+CPG 13B                                      CPG 13B
+CRS 4-2                                      Sun based CRS 4.2 NE
+CRS 5-0                                      Sun based CRS 5.0 NE
+CRS 5-0-1-ESA                                Sun based CRS 5.0.1 NE with ESA FM support
+CRS 5-0-ESA                                  Sun based CRS 5.0 NE with ESA FM support
+CRS 6-0-ESA                                  Sun based CRS 6.0 NE with ESA FM support
+CRS 7-1-ESA                                  Sun based CRS 7.1 NE with ESA FM support
+CRS 7-3-ESA                                  Sun based CRS 7.3 NE with ESA FM support
+CS-AS Rel13                                  CS-AS Rel13 NE
+CS-AS Rel14                                  CS-AS Rel14 NE
+CS-CDS Rel13                                 CS-CDS Rel13 NE
+CS-CDS Rel14                                 CS-CDS Rel14 NE
+CS-DS Rel13                                  CS-DS Rel13 NE
+CS-DS Rel14                                  CS-DS Rel14 NE
+CS-MS Rel13                                  CS-MS Rel13 NE
+CS-MS Rel14                                  CS-MS Rel14 NE
+CSCF 11A                                     TSP 6.0 based CSCF 11A NE with data
+CSCF 11B                                     TSP 6.0 based CSCF 11B NE with data
+CSCF 12A                                     TSP 6.0 based CSCF 12A NE with data
+CSCF 12B                                     TSP 6.0 based CSCF 12B NE with data
+CSCF 13A                                     TSP 6.0 based CSCF 13A NE with data
+CSCF 13B                                     TSP 6.0 based CSCF 13B NE with data
+CSCF 14A                                     TSP 6.0 based CSCF 14A NE with data
+CSCF 14B                                     TSP 6.0 based CSCF 14B NE with data
+CSCF 15A                                     TSP 6.0 based CSCF 15A NE with data
+CSCF 15B                                     TSP 6.0 based CSCF 15B NE with data
+CSCF 15B-CP1                                 TSP 6.0 based CSCF 15B CP1 NE with data
+CSCF 16A                                     TSP 6.0 based CSCF 16A NE with data
+CSCF 16B                                     TSP 6.0 based CSCF 16B NE with data
+CSCF 17A                                     TSP 6.0 based CSCF 17A NE with data
+CSCF 4-0                                     TSP 5.2 based CSCF 4.0 NE with data
+CSCF 4-1                                     TSP 5.3 based CSCF 4.1 NE
+CSCF 5-0                                     TSP 6.0 based CSCF 5.0 NE with data
+CSCF 7-2                                     TSP 6.0 based CSCF 7.2 NE with data
+CSCF-CBA 1-2                                 CBA 6.0 based CSCF 1.2 NE with data
+CSCF-CBA 1-3                                 CBA 6.0 based CSCF 1.3 NE with data
+CSCF-CBA 15B                                 CBA 6.0 based CSCF 15B NE with data
+CSCF-CBA 16A                                 CBA 6.0 based CSCF 16A NE with data
+CSCF-CBA 16B                                 CBA 6.0 based CSCF 16B NE with data
+CUDB 1-0                                     CUDB 1.0 NE
+CUDB 1-2                                     CUDB 1-2 NE
+CUDB 1-2-16A-ESA                             CUDB 1-2-16A NE
+CUDB 11A                                     CUDB 11A NE
+CUDB 11B                                     CUDB 11B NE
+CUDB 12A                                     CUDB 12A NE
+CUDB 12B                                     CUDB 12B NE
+CUDB 13B                                     CUDB 13B NE
+CUDB 13B-FD1                                 CUDB 13B FD1 NE
+CUDB 15A                                     CUDB 15A NE
+CUDB 16A                                     CUDB 16A NE
+CUDB 16A-FD1                                 CUDB 16A FD1 NE
+DAE 1-0                                      DAE v1.0
+DDC R1                                       DDC R1 NE
+DMX 2-0                                      DMX 2.0
+E-CSCF 11A                                   TSP 6.0 based E-CSCF 11A NE with data
+E-CSCF 11B                                   TSP 6.0 based E-CSCF 11B NE with data
+E-CSCF 12A                                   TSP 6.0 based E-CSCF 12A NE with data
+E-CSCF 12B                                   TSP 6.0 based E-CSCF 12B NE with data
+E-CSCF 16B                                   TSP 6.0 based E-CSCF 16B NE with data
+E-CSCF 5-0                                   TSP 6.0 based E-CSCF 5.0 NE with data
+ECAS 15B                                     ECAS 15B
+ECAS 16A                                     ECAS 16A
+ECAS 17A                                     ECAS 17A
+ECE 15-1-ESA                                 CORE ECE 15.1 with ESA
+ECE 16-1-ESA                                 CORE ECE 16.1 with ESA
+ECE 17-1-ESA                                 CORE ECE 17.1 with ESA
+ECE 17-ESA                                   CORE ECE 17 with ESA
+ECE 3-0-ESA                                  CORE ECE 3.0 with ESA
+ECM R1-1                                     ECM
+ECM R15-2                                    ECM
+ECM R16                                      ECM
+ECM R16-1                                    ECM
+ECM R17                                      ECM
+ECMS 2-0                                     ECMS 2.0 NE
+ECMS 3-2                                     ECMS 3-2 NE
+ECMS 4-2                                     ECMS 4-2 NE
+ECMS 4-3                                     ECMS 4-3 NE
+EDA 1-0-ESA                                  CORE EDA 1.0 with ESA
+EMA 5-6                                      CORE EMA 5.6
+EMA 6-0                                      CORE EMA 6.0
+EMA-AS 15-0                                  CORE EMA AS 15.0
+EMA-AS 7-0                                   CORE EMA AS 7.0
+EMA-AS 7-1                                   CORE EMA AS 7.1
+EMA-AS 7-1-CP1                               CORE EMA AS 7.1 CP1
+EMA-AS 7-2                                   CORE EMA AS 7.2
+EMA-PG 15-0-CP1                              CORE EMA PG 15.0 CP1
+EMA-PG 15-1                                  CORE EMA-PG R15-1
+EMA-PG 7-1-CP1                               CORE EMA PG 7.1 CP1
+EMA-PG 7-2                                   CORE EMA PG 7.2
+EMA-PG R15-0                                 CORE EMA-PG R15-0
+EMA-PS 15-0                                  CORE EMA PS 15.0
+EMA-PS 7-0                                   CORE EMA AS 7.0
+EMA-PS 7-1                                   CORE EMA AS 7.1
+EMM-FE 7-0                                   EMM FE 7.0 NE
+EMM-OLM 7-0                                  EMM OLM 7.0 NE
+EPC 2-1                                      TSP 5.3 based EPC 2.1 NE
+EPG 12A-SSR                      DEPRECATED  Redback Networks SSR8020 based EPG 12A NE
+EPG-JUNIPER 12A                              Juniper Networks M120/M320-based EPG 12A NE
+EPG-JUNIPER 13A                              Juniper Networks M120/M320-based EPG 13A NE
+EPG-JUNIPER 14B                              Juniper Networks M120/M320-based EPG 14B NE
+EPG-JUNIPER 15B                              Juniper Networks M120/M320-based EPG 15B NE
+EPG-SSR 14A                                  Redback Networks based EPG 14A NE
+EPG-SSR 14B                                  Redback Networks based EPG 14B NE
+ERDM 1-0                                     ERDM 1.0 NE
+ESAPC 16B-CORE-V5#1              TEMPLATE-BASED ESAPC 16B-CORE V5
+EdgeRouter SE-100                            EdgeRouter SE-100
+EdgeRouter SE-1200                           EdgeRouter SE-1200
+EdgeRouter SE-400                            EdgeRouter SE-400
+EdgeRouter SE-600                            EdgeRouter SE-600
+EdgeRouter SE-800                            EdgeRouter SE-800
+EdgeRouter-SSR 12B                           EdgeRouter SSR 12B
+EdgeRouter-SSR 14A                           EdgeRouter SSR 14A
+EdgeRouter-SSR 14B                           EdgeRouter SSR 14B
+EdgeRouter-SSR 15B                           EdgeRouter SSR 15B
+EdgeRouter-SSR 15B-DP1                       EdgeRouter SSR 15B-DP1
+EdgeRouter-SSR 16A                           EdgeRouter SSR 16A
+EdgeRouter-SSR R3-0                          EdgeRouter SSR R3.0
+GGSN 09A                                     Juniper Networks J20-based GGSN 09A NE
+GGSN 09B                                     Juniper Networks J20-based GGSN 09B NE
+GGSN J20                                     Juniper Networks J20-based GGSN R2.5 NE
+GGSN R3                                      Juniper Networks J20-based GGSN R3 NE
+GGSN R4-J20                                  Juniper Networks J20-based GGSN R4 NE
+GGSN R5                                      Juniper Networks J20-based GGSN R5 FP01 NE
+GGSN-MPG 10A                                 Juniper Networks J20-based GGSN-MPG 10A NE
+GGSN-MPG 10B                                 Juniper Networks J20-based GGSN-MPG 10B NE
+GGSN-MPG 11A                                 Juniper Networks J20-based GGSN-MPG 11A NE
+GGSN-MPG 11B                                 Juniper Networks J20-based GGSN-MPG 11B NE
+GMPC 100                                     GMPC 10.0 NE
+GMPC 110                                     GMPC 11.0 NE
+GMPC 111                                     GMPC 11.1 NE
+GMPC 13B                                     GMPC 13B NE
+GMPC 14B                                     GMPC 14B NE
+GMPC 15                                      GMPC 15 NE
+GMPC 16                                      GMPC 16 NE
+GSN 08B                                      WPP based SGSN 08B with SNMP and SSH support
+GSN 09A                                      WPP based SGSN 09A with SNMP and SSH support
+GSN 09B                                      WPP based SGSN 09B with SNMP and SSH support
+GSN 09B-2                                    WPP based SGSN 09B-2 with SNMP and SSH support
+GSN 09B-RP01                                 WPP based SGSN 09B-RP01 with SNMP and SSH support
+GSN 1-5                                      WPP based SGSN 1-5 with SNMP and SSH support
+GSN 10A                                      WPP based SGSN 10A with SNMP and SSH support
+GSN 10B                                      WPP based SGSN 10B with SNMP and SSH support
+GSN 10B-RP02                                 WPP based SGSN 10B-RP02 with SNMP and SSH support
+GSN 11A                                      WPP based SGSN 11A with SNMP and SSH support
+GSN 11A-FP01                                 WPP based SGSN 11A FP01 with SNMP and SSH support
+GSN 11A-FP02                                 WPP based SGSN 11A FP02 with SNMP and SSH support
+GSN 11B                                      WPP based SGSN 11B with SNMP and SSH support
+GSN 12A                                      WPP based SGSN 12A with SNMP and SSH support
+GSN 13A                                      WPP based SGSN 13A with SNMP and SSH support
+GSN 13B                                      WPP based SGSN 13A with SNMP and SSH support
+GSN 14A                                      WPP based SGSN 14A with SNMP and SSH support
+GSN 14B                                      WPP based SGSN 14A with SNMP and SSH support
+GSN 15A                                      WPP based SGSN 15A with SNMP and SSH support
+GSN 15B                                      WPP based SGSN 15B with SNMP and SSH support
+GSN 16A                                      WPP based SGSN 16A with SNMP and SSH support
+GSN WPP                                      Generic WPP based SGSN with SNMP and SSH support
+GSN WPP-70                                   WPP based SGSN R7.0 with SNMP and SSH support
+GSN WPP-80                                   WPP based SGSN R8.0 with SNMP and SSH support
+HDS-8000 16A                                 CBA based HDS-8000 16A NE
+HDS-CCM 17A                                  HDS-CCM 17A NE
+HGM 17A                                      HGM 17A
+HGM 17B                                      HGM 17B
+HGW 17A                                      HGW 17A
+HSS 11A                                      TSP 6.0 based HSS 11A NE
+HSS 11B                                      TSP 6.0 based HSS 11B NE
+HSS 12A                                      TSP 6.0 based HSS 12A NE
+HSS 12B                                      TSP 6.0 based HSS 12B NE
+HSS 14A                                      TSP 6.0 based HSS 14A NE
+HSS 15A                                      TSP 6.0 based HSS 15A NE
+HSS 16A                                      TSP 6.0 based HSS 16A NE
+HSS 17A                                      TSP 6.0 based HSS 17A NE
+HSS 4-0                                      TSP 5.2 based HSS 4.0 NE with data
+HSS 4-1                                      TSP 5.3 based HSS 4.1 NE
+HSS 5-0                                      TSP 6.0 based HSS 5.0 NE
+HSS-FD1 14A                                  TSP 6.0 based HSS-FD1 14A NE
+HSS-FD1 15A                                  TSP 6.0 based HSS-FD1 15A NE
+HSS-FE 12B                                   TSP 6.0 based HSS-FE 12B NE
+HSS-FE 14A                                   TSP 6.0 based HSS-FE 14A NE
+HSS-FE 15B                                   CBA based HSS-FE 15B NE
+HSS-FE 16A                                   CBA based HSS-FE 16A NE
+HSS-FE-FD1 14A                               TSP 6.0 based HSS-FE-FD1 14A NE
+HSS-FE-FD1 15A                               TSP 6.0 based HSS-FE-FD1 15A NE
+HSS-SM 5-0                                   TSP 6.0 based HSS-SM 5.0 NE
+I-CSCF 11A                                   TSP 6.0 based I-CSCF 11A NE with data
+I-CSCF 11B                                   TSP 6.0 based I-CSCF 11B NE with data
+I-CSCF 12A                                   TSP 6.0 based I-CSCF 12A NE with data
+I-CSCF 12B                                   TSP 6.0 based I-CSCF 12B NE with data
+I-CSCF 16B                                   TSP 6.0 based I-CSCF 16B NE with data
+I-CSCF 5-0                                   TSP 6.0 based I-CSCF 5.0 NE with data
+IMS-CO-ICS 4-1                               TSP 6.0 based IMS-CO-ICS 4.1 NE with data
+IMS-M 2-0                                    TSP 5.3 based IMS-M 2.0 NE with data
+IPRouter AXI-520                             AXI 520
+IPRouter AXI-520_4                           AXI 520-4
+IPRouter AXI-580                             AXI 580
+IPWorks 11B                                  IPWorks 11B NE
+IPWorks 12A                                  IPWorks 12A NE
+IPWorks 12B                                  IPWorks 12B NE
+IPWorks 12B-FD1                              IPWorks 12B-FD1 NE
+IPWorks 14B                                  IPWorks 14B NE
+IPWorks 14B-FD1                              IPWorks 14B-FD1 NE
+IPWorks 15B                                  IPWorks 15B NE
+IPWorks 15B-FD1                              IPWorks 15B NE
+IPWorks R4-1                                 IPWorks 4.1 NE
+IPWorks R4-2                                 IPWorks 4.2 NE
+IPWorks R5                                   IPWorks R5 NE
+IPWorks R6                                   IPWorks R6 NE
+IPWorks R7-FD1                               IPWorks 7.0 FD1 NE
+JUNIPER M10i                                 JUNIPER M10i
+MINSAT 6-2                                   Sun based MINSAT 6.2 NE
+MINSAT 7-0-2                                 Sun based MINSAT 7.0.2 NE
+MINSAT 7-0-2-ESA                             Sun based MINSAT 7.0.2 NE with ESA FM support
+MINSAT 7-0-ESA                               Sun based MINSAT 7.0 NE with ESA FM support
+MINSAT 7-2-8-ESA                             Sun based MINSAT 7.2.8 NE with ESA FM support
+MIO 1-0                                      MiO 1.0
+MIO 2-0                                      MiO 2.0
+MM 15-1-ESA                                  CORE MM 15.1 with ESA
+MM 15-2-ESA                                  CORE MM 15.2 with ESA
+MM 8-0-ESA                                   CORE MM 8.0 with ESA
+MM 8-1-ESA                                   CORE MM 8.1 with ESA
+MM 8-2-ESA                                   CORE MM 8.2 with ESA
+MM 8-3-ESA                                   CORE MM 8.3 with ESA
+MM 9-0-ESA                                   CORE MM 9.0 with ESA
+MMC 5-0                                      MMC 5.0 NE with SNMP support
+MOIP 4-2-1                                   Messaging-over-IP NE with SNMP support
+MOIP 5-0                                     Messaging-over-IP NE with SNMP support
+MRF 4-0                                      TSP 5.2 based MRF 4.0 NE with data
+MRF 4-2                                      TSP 5.3 based MRF 4.2 NE
+MRFC 11B                                     TSP 6.0 based MRFC 11B NE with data
+MRFC 5-0                                     TSP 6.0 based MRFC 5.0 NE with data
+MRFP 1-1                                     MRFP 1.1
+MRFP 1-2                                     MRFP 1.2
+MRFP 1-2A                                    MRFP 1.2A
+MSP 5-3                                      Multiservice Proxy 5.3
+MTAS 11A                                     TSP 6.0 based MTAS 11A NE with PM support
+MTAS 11B                                     TSP 6.0 based MTAS 11B NE with PM support
+MTAS 12A                                     TSP 6.0 based MTAS 12A NE with PM support
+MTAS 12B                                     TSP 6.0 based MTAS 12B NE with PM support
+MTAS 13A                                     TSP 6.0 based MTAS 13A NE with PM support
+MTAS 13B                                     TSP 6.0 based MTAS 13B NE with PM support
+MTAS 14A                                     TSP 6.0 based MTAS 14A NE with PM support
+MTAS 14B                                     TSP 6.0 based MTAS 14B NE with PM support
+MTAS 15A                                     TSP 6.0 based MTAS 15A NE with Subscriber Trace Support
+MTAS 15B                                     CBA based MTAS 15B NE with Subscriber Trace Support
+MTAS 16A                                     TSP 6.0 based MTAS 16A NE with Subscriber Trace Support
+MTAS 16B                                     TSP 6.0 based MTAS 16B NE with Subscriber Trace Support
+MTAS 17A                                     TSP 6.0 based MTAS 17A NE with Subscriber Trace Support
+MTAS 2-0                                     TSP 5.3 based MTAS 2.0 NE
+MTAS 3-0                                     TSP 6.0 based MTAS 3.0 NE with PM support
+MTAS 3-1                                     TSP 6.0 based MTAS 3.1 NE with PM support
+MTAS 4-3                                     TSP 6.0 based MTAS 4.3 NE with PM support
+MTAS 4-4                                     TSP 6.0 based MTAS 4.4 NE with PM support
+MTAS-CBA 1-5                                 CBA based MTAS 1.5 NE with Subscriber Trace Support
+MTAS-CBA 16A                                 CBA based MTAS 16A NE with Subscriber Trace Support
+MTAS-CBA 16B                                 CBA based MTAS 16B NE with Subscriber Trace Support
+MTAS-TSP 15B                                 TSP 6.0 based MTAS 15B NE with Subscriber Trace Support
+NMS FOR-SNMP                                 Test NMS for SNMP-based nodes
+NMS V1                                       CORE NMS V1
+OCC 3-0-ESA                                  OCC 3-0
+OPENCODE-IVR R1                              Opencode IVR Gateway
+OPENCODE-USSD R1                             Opencode USSD Gateway
+OSS FOR-DMX                                  Simulated OSS suitable for communication with DMX NEs
+OSS FOR-ECM                                  Simulated OSS suitable for communication with ECM NEs
+OSS FOR-GGSN                                 Simulated OSS suitable for communication with GGSN NEs
+OSS FOR-IS                                   Test client for NETCONF-based nodes
+OSS FOR-MMC                                  Simulated OSS suitable for communication with MMC NEs
+OSS FOR-NETCONF                              Test client for NETCONF-based nodes
+OSS FOR-PSTU                                 Simulated OSS suitable for communication with PSTU NEs
+OSS FOR-SASN                                 Simulated OSS suitable for communication with SASN NEs
+OSS FOR-SDC                                  Simulated OSS suitable for communication with SDC NEs
+OSS FOR-SGSN-08B                             Simulated OSS for SGSN 08B WPP-based nodes
+OSS FOR-SGSN-09A                             Simulated OSS for SGSN 08B WPP-based nodes
+OSS FOR-SGSN-09B                             Simulated OSS for SGSN 09B WPP-based nodes
+OSS FOR-SGSN-10A                             Simulated OSS for SGSN 10A WPP-based nodes
+OSS FOR-SGSN-10B                             Simulated OSS for SGSN 10B WPP-based nodes
+OSS FOR-SGSN-11A                             Simulated OSS for SGSN 11A WPP-based nodes
+OSS FOR-SGSN-11A-FP01                        Simulated OSS for SGSN 11A FP01 WPP-based nodes
+OSS FOR-SGSN-11A-FP02                        Simulated OSS for SGSN 11A FP02 WPP-based nodes
+OSS FOR-SGSN-11B                             Simulated OSS for SGSN 11B WPP-based nodes
+OSS FOR-SGSN-12A                             Simulated OSS for SGSN 12A WPP-based nodes
+OSS FOR-SGSN-13A                             Simulated OSS for SGSN 13A WPP-based nodes
+OSS FOR-SNM                                  Simulated OSS suitable for communication with BNSI agents
+OSS FOR-SNMP                                 Test client for SNMP-based nodes
+OSS WPP-55                                   Test client for SGSN 5.5 WPP-based nodes
+OSS WPP-60                                   Test client for SGSN 6.0 WPP-based nodes
+OSS WPP-70                                   Test client for SGSN 7.0 WPP-based nodes
+OSS WPP-80                                   Test client for SGSN 8.0 WPP-based nodes
+P-CSCF 11A                                   TSP 6.0 based P-CSCF 11A NE with data
+P-CSCF 11B                                   TSP 6.0 based P-CSCF 11B NE with data
+P-CSCF 12A                                   TSP 6.0 based P-CSCF 12A NE with data
+P-CSCF 12B                                   TSP 6.0 based P-CSCF 12B NE with data
+P-CSCF 16B                                   TSP 6.0 based P-CSCF 16B NE with data
+P-CSCF 5-0                                   TSP 6.0 based P-CSCF 5.0 NE with data
+PG 15-1-ESA                                  CORE PG 15.1 with ESA
+PG 16-0-ESA                                  CORE PG 16.0 with ESA
+PG 16-1-ESA                                  CORE PG 16.1 with ESA
+PG 16-2-ESA                                  CORE PG 16.2 with ESA
+PG 16-3-ESA                                  CORE PG 16.3 with ESA
+PG 5-0-ESA                                   CORE PG 5.0 with ESA
+PG 5-1-ESA                                   CORE PG 5.1 with ESA
+PG 6-0-ESA                                   CORE PG 6.0 with ESA
+PG 6-1-ESA                                   CORE PG 6.1 with ESA
+PG 6-2-ESA                                   CORE PG 6.2 with ESA
+PG 6-3-ESA                                   CORE PG 6.3 with ESA
+PG 7-1-CP1-ESA                               CORE PG 7.1 CP1 with ESA
+PG 7-1-ESA                                   CORE PG 7.1 with ESA
+PG 7-2-ESA                                   CORE PG 7.2 with ESA
+PGM 12A                                      OMP 2.0 based PGM 12A NE
+PGM 4-1                                      TSP 5.3 based PGM 4.1 NE
+PGM 5-0                                      OMP 2.0 based PGM 5.0 NE
+PGM-AP 4-1                                   TSP 5.3 based PGM-AP 4.1 NE
+PGM-AP 5-0                                   OMP 2.0 based PGM 5.0 NE
+PGM-AP 5-0-FD1                               OMP 2.0 based PGM 5.0 FD1 NE
+PGM-AP 5-0-FD2                               OMP 2.0 based PGM 5.0 FD2 NE
+PGM-MWI 5-0                                  OMP 2.0 based PGM 5.0 NE
+PGM-MWI 5-0-FD1                              OMP 2.0 based PGM 5.0 FD1 NE
+PGM-MWI 5-0-FD2                              OMP 2.0 based PGM 5.0 FD2 NE
+PGM-PXD 5-0                                  OMP 2.0 based PGM 5.0 NE
+PGM-PXD 5-0-FD1                              OMP 2.0 based PGM 5.0 FD1 NE
+PGM-PXD 5-0-FD2                              OMP 2.0 based PGM 5.0 FD2 NE
+PGM-WUIGM 4-1                                TSP 5.3 based PGM-WUIGM 4.1 NE
+PGM-WUIGM 5-0                                OMP 2.0 based PGM 5.0 NE
+PGM-WUIGM 5-0-FD1                            OMP 2.0 based PGM 5.0 FD1 NE
+PGM-WUIGM 5-0-FD2                            OMP 2.0 based PGM 5.0 FD2 NE
+ProtocolServer 12B                           ProtocolServer 12B NE
+ProtocolServer 14B                           ProtocolServer 14B NE
+RADIUS A1                                    JUNIPER RADIUS A1
+RAN-VNFM LCM                                 RAN-VNFM LCM
+S-CSCF 11A                                   TSP 6.0 based S-CSCF 11A NE with data
+S-CSCF 11B                                   TSP 6.0 based S-CSCF 11B NE with data
+S-CSCF 12A                                   TSP 6.0 based S-CSCF 12A NE with data
+S-CSCF 12B                                   TSP 6.0 based S-CSCF 12B NE with data
+S-CSCF 16B                                   TSP 6.0 based S-CSCF 16B NE with data
+S-CSCF 5-0                                   TSP 6.0 based S-CSCF 5.0 NE with data
+SAEGW FD1                                    SAE-GW FD1
+SAPC 09A                                     TSP 6.0 based SAPC 2009 NE
+SAPC 09B                                     TSP 6.0 based SAPC 2009 NE
+SAPC 10A                                     TSP 6.0 based SAPC 2010 NE
+SAPC 10AFP                                   TSP 6.0 based SAPC 2010 NE
+SAPC 10B                                     TSP 6.0 based SAPC 2010 NE
+SAPC 11A                                     TSP 6.0 based SAPC 2011 NE
+SAPC 11B                                     TSP 6.0 based SAPC 2011 NE
+SAPC 12A                                     TSP 6.0 based SAPC 2012 NE
+SAPC 12B                                     TSP 6.0 based SAPC 2012 NE
+SAPC 13A                                     TSP 6.0 based SAPC 13A NE
+SAPC 13B                                     TSP 6.0 based SAPC 13B NE
+SAPC 14A                                     TSP 6.0 based SAPC 14A NE
+SAPC 14B                                     TSP 6.0 based SAPC 14B NE
+SAPC 15B                                     TSP 6.0 based SAPC 15B NE
+SAPC 15B-FP1                                 TSP 6.0 based SAPC 15B FP1 NE
+SAPC 15B-FP2                                 TSP 6.0 based SAPC 15B FP2 NE
+SAPC 16B                                     TSP 6.0 based SAPC 16B NE
+SAPC 16B-FD2                                 TSP 6.0 based SAPC 16B FD2 NE
+SAPC 16B-FD3                                 TSP 6.0 based SAPC 16B FD3 NE
+SASN 09A                                     SASN 09A
+SASN 09B                                     SASN 09B
+SASN 10A                                     SASN 10A
+SASN 10A-FP01                                SASN 10A FP01
+SASN 11A                                     SASN 11A
+SASN 11B                                     SASN 11B
+SASN 12A                                     SASN 12A
+SASN 13A                                     SASN 13A
+SASN 13B                                     SASN 13B
+SASN 14A                                     SASN 14A
+SASN R5                                      SASN R5
+SASN R6                                      SASN R6
+SDC R5-8                                     SDC R5.8
+SDP 5-2                                      Sun based SDP 5.2 NE
+SDP 5-4                                      Sun based SDP 5.4 NE
+SDP 5-4-ESA                                  Sun based SDP 5.4 NE with ESA FM support
+SDP 5-ESA                                    Sun based SDP 5 NE with ESA FM support
+SGSN 08B                                     SGSN 08B with only Corba support
+SGSN 09A                                     SGSN 09A with only Corba support
+SGSN 09B                                     SGSN 09B with only Corba support
+SGSN 09B-RP01                                SGSN 09B RP01 with only Corba support
+SGSN 10A                                     SGSN 10A with only Corba support
+SGSN 10B                                     SGSN 10B with only Corba support
+SGSN 11A                                     SGSN 11A with only Corba support
+SGSN 11A-FP01                                SGSN 11A FP01 with only Corba support
+SGSN 11A-FP02                                SGSN 11A FP02 with only Corba support
+SGSN 11B                                     SGSN 11B with only Corba support
+SGSN 12A                                     SGSN 12A with only Corba support
+SGSN 13A                                     SGSN 13A with Corba support only
+SGSN 13B                                     SGSN 13A with Corba support only
+SGSN SPP-R2                                  SGSN Pool Proxy, SPP R2
+SGSN SPP-R2CP08                              SGSN Pool Proxy, SPP R2CP08
+SGSN SPP-R2CP09                              SGSN Pool Proxy, SPP R2CP09
+SGSN SPP-R2CP10                              SGSN Pool Proxy, SPP R2CP10
+SGSN SPP-SPP300SP00                          SGSN Pool Proxy, SPP SPP300SP00
+SGSN SPP-SPP300SP01                          SGSN Pool Proxy, SPP SPP300SP01
+SGSN WPP-55                                  SGSN R5.5 with only Corba support
+SGSN WPP-60                                  SGSN R6.0 with only Corba support
+SGSN WPP-70                                  SGSN R7.0 with only Corba support
+SGSN WPP-80                                  SGSN R8.0 with only Corba support
+SLF 1-1                                      TSP 5.3 based SLF 1.1 NE
+SMPC 110                                     SMPC 11.0 NE
+SMPC 13B                                     SMPC 13B NE
+SMPC 14B                                     SMPC 14B NE
+SMPC 15                                      SMPC 15 NE
+SMPC 16                                      SMPC 16 NE
+SMPC 60                                      SMPC 6.0 NE
+SMPC 70                                      SMPC 7.0 NE
+SMPC 80                                      SMPC 8.0 NE
+SNM DEFAULT                                  BNSI AGENT
+SNMP NBI                                     CORE SNMP NBI
+SSG 6-3                                      SSG 6.3
+SYSLOG SERVER                                syslog server
+SmartMetro SM-240                            SmartMetro SM-240
+SmartMetro SM-480                            SmartMetro SM-480
+SpitFire 17A-V7                  TEMPLATE-BASED SpitFire 17A V7
+SunMC 1-0                                    Sun based SunMC ?.? NE
+SunMC 4-0                                    Sun based SunMC 4.0 NE
+TSP 4-0                                      TSP 4.0 NE
+TSP 5-2                                      TSP 5.2 NE
+TSP 5-3                                      TSP 5.3 NE
+TSP 6-0                                      TSP 6.0 NE
+TrueTime NTS-200                             TrueTimeNTS-200
+UPG 12A-ESA                                  CORE UPG 12A with ESA
+UPG 12B-ESA                                  CORE UPG 12B with ESA
+VPN 3-2                                      TSP 6.0 based VPN 3.2 NE with FM support
+VS 3-2                                       Sun based VS 3.2 NE
+VS 4-0                                       Sun based VS 4.0 NE
+VS 4-0-ESA                                   Sun based VS 4.0 NE with ESA FM support
+VS 5-0-ESA                                   Sun based VS 5.0 NE with ESA FM support
+VXML-IVR-AS 2-5                              VXML-IVR-AS 2.5 NE with data
+VXML-IVR-AS 3-0                              VXML-IVR-AS 3.0 NE with data
+VXML-IVR-AS 3-1                              VXML-IVR-AS 3.1 NE with data
+VXML-IVR-MS 3-3                              VXML-IVR-MS 3.3 NE with data
+VXML-IVR-MS 3-4                              VXML-IVR-MS 3.4 NE with data
+ZELS 30                                      ZELS 3.0 NE
+TEMPLATE APG 43L                             no_value
+TEMPLATE BBSC 14B-CORE                       no_value
+TEMPLATE BBSC 15A-CORE                       no_value
+TEMPLATE BBSC 16A-CORE                       no_value
+TEMPLATE BBSC 16B-CORE                       no_value
+TEMPLATE BBSC 16B-FD1-CORE                   no_value
+TEMPLATE BCE 13B-CORE                        no_value
+TEMPLATE BCE 15A-CORE                        no_value
+TEMPLATE BCE 16A-CORE                        no_value
+TEMPLATE BCE 16B-CORE                        no_value
+TEMPLATE BSP 14B-CORE                        no_value
+TEMPLATE BSP 14B-V2-CORE                     no_value
+TEMPLATE BSP 15A-CORE                        no_value
+TEMPLATE BSP 15B-CORE                        no_value
+TEMPLATE BSP R10-CORE                        no_value
+TEMPLATE BSP R11-CORE                        no_value
+TEMPLATE BSP R6-CORE                         no_value
+TEMPLATE BSP R7-CORE                         no_value
+TEMPLATE BSP R8-CORE                         no_value
+TEMPLATE BSP R9-CORE                         no_value
+TEMPLATE CSCF 1-2-CORE                       CSCF 1.2 NE
+TEMPLATE CSCF 1-3-CORE                       CSCF 1.3 NE
+TEMPLATE CSCF 15A-CORE                       CSCF 15A NE
+TEMPLATE CSCF 15B-CORE                       CSCF 15B NE
+TEMPLATE CSCF 16A-CORE                       CSCF 16A NE
+TEMPLATE CSCF 16B-CORE                       CSCF 16B NE
+TEMPLATE CSCF 17B-RUI-CORE                   CSCF 17B RUI NE
+TEMPLATE CSCF-LEGACY 13A                     no_value
+TEMPLATE CSCF-LEGACY 13A-FD1                 no_value
+TEMPLATE CSCF-LEGACY 13B                     no_value
+TEMPLATE CSCF-LEGACY 14B                     no_value
+TEMPLATE CSCF-LEGACY 15B                     no_value
+TEMPLATE CUDB 17A-CORE                       CUDB 17A NE
+TEMPLATE CUDB REF                            no_value
+TEMPLATE DMX 4-0-CORE                        no_value
+TEMPLATE DUA-S 1-2-CORE                      DUA-S 1.2 NE
+TEMPLATE DUA-S 14B-CORE                      DUA-S 14B NE
+TEMPLATE DUA-S 15A-CORE                      DUA-S 15A NE
+TEMPLATE DUA-S 15B-CORE                      DUA-S 15B NE
+TEMPLATE DUA-S 16A-CORE                      DUA-S 16A NE
+TEMPLATE ECIM H2S-12A-REF                    no_value
+TEMPLATE ECIM H2S-12B-REF                    no_value
+TEMPLATE ECIM H2S-13B-REF                    no_value
+TEMPLATE ECIM H2S-14A-REF                    no_value
+TEMPLATE ECIM H2S-REF                        no_value
+TEMPLATE ECIM REF                            no_value
+TEMPLATE EPDG 14B-CORE                       EPDG 14B NE
+TEMPLATE EPDG 15B-CORE                       EPDG 15B NE
+TEMPLATE EPG-EVR 1-0                         no_value
+TEMPLATE EPG-EVR 16A-CP06                    no_value
+TEMPLATE EPG-EVR 16B                         no_value
+TEMPLATE EPG-EVR 16B-CP02                    no_value
+TEMPLATE EPG-SSR 1-0                         no_value
+TEMPLATE EPG-SSR 12A                         no_value
+TEMPLATE EPG-SSR 13B                         no_value
+TEMPLATE EPG-SSR 14B                         no_value
+TEMPLATE EPG-SSR 15A                         no_value
+TEMPLATE EPG-SSR 15B                         no_value
+TEMPLATE EPG-SSR 16A                         no_value
+TEMPLATE EPG-SSR 16B                         no_value
+TEMPLATE EPG-SSR 16B-CP02                    no_value
+TEMPLATE EPG-SSR-PLATFORM 13B                no_value
+TEMPLATE ESAPC 1-0-CORE                      no_value
+TEMPLATE ESAPC 14A-CORE                      no_value
+TEMPLATE ESAPC 15A-CORE                      no_value
+TEMPLATE ESAPC 16A-CORE                      no_value
+TEMPLATE ESAPC 16B-CORE                      no_value
+TEMPLATE ESAPC 17A-CORE                      no_value
+TEMPLATE HSS-FE 1-0                          no_value
+TEMPLATE HSS-FE 1-1                          no_value
+TEMPLATE HSS-FE 16A                          no_value
+TEMPLATE HSS-FE 16A-FD1                      no_value
+TEMPLATE HSS-FEv 1                           no_value
+TEMPLATE IPWORKS 1-2-CORE                    no_value
+TEMPLATE IPWORKS 1-3-CORE                    no_value
+TEMPLATE IPWORKS 16A-CORE                    no_value
+TEMPLATE IPWORKS 16B-CORE                    no_value
+TEMPLATE IPWORKS 17A-CORE                    no_value
+TEMPLATE MIO 3-0-CORE                        no_value
+TEMPLATE MIO 3-1-CORE                        no_value
+TEMPLATE MRFv 1-0-CORE                       MRFv 1-0 NE
+TEMPLATE MRFv 1-1-CORE                       MRFv 1-1 NE
+TEMPLATE MRFv 1-2-CORE                       MRFv 1-2 NE
+TEMPLATE MRFv 17A-CORE                       MRFv 17A NE
+TEMPLATE MRSv 16A-CORE                       MRSv 16A NE
+TEMPLATE MRSv-BGF 1-7-CORE                   MRSv 16A NE
+TEMPLATE MRSv-BGF 1-9-CORE                   MRSv 1.9
+TEMPLATE MRSv-BGF 16A-CORE                   MRSv 16A NE
+TEMPLATE MTAS 1-5-CORE                       no_value
+TEMPLATE MTAS 1-7-CORE                       no_value
+TEMPLATE MTAS 15B-CORE                       no_value
+TEMPLATE MTAS 16A-CORE                       no_value
+TEMPLATE MTAS 16B-CORE                       no_value
+TEMPLATE MTAS 17B-RUI-CORE                   no_value
+TEMPLATE MTAS-LEGACY 13A                     no_value
+TEMPLATE MTAS-LEGACY 13B                     no_value
+TEMPLATE MTAS-LEGACY 14B                     no_value
+TEMPLATE MTAS-LEGACY 15A                     no_value
+TEMPLATE MTAS-LEGACY 15B                     no_value
+TEMPLATE PGM 16A-CORE                        PGM 16A NE
+TEMPLATE PGM 16B-CORE                        PGM 16B NE
+TEMPLATE PGM 6-0-CORE                        PGM 6.0 NE
+TEMPLATE R6274 17A                           R6274 17A
+TEMPLATE R6274 18A                           R6274 18A
+TEMPLATE SBG 1-4-CORE                        SBG 1.4 NE
+TEMPLATE SBG 1-6-CORE                        SBG 1.6 NE
+TEMPLATE SBG 15A-CORE                        SBG 15A NE
+TEMPLATE SBG 15B-CORE                        SBG 15B NE
+TEMPLATE SBG 16A-CORE                        SBG 16A NE
+TEMPLATE SBG 16B-CORE                        SBG 16B NE
+TEMPLATE SBG 17B-RUI-CORE                    SBG 17B RUI NE
+TEMPLATE SDNC-P 14B-CORE                     no_value
+TEMPLATE SDNC-P 15A-CORE                     no_value
+TEMPLATE SDNC-P 16A-CORE                     no_value
+TEMPLATE SGSN 09A-CS                         no_value
+TEMPLATE SGSN 09B-CS                         no_value
+TEMPLATE SGSN 10A-CS                         no_value
+TEMPLATE SGSN 10B-CS                         no_value
+TEMPLATE SGSN 11A-CS                         no_value
+TEMPLATE SGSN 11B-CS                         no_value
+TEMPLATE SGSN 12A-CS                         no_value
+TEMPLATE SGSN 13A                            no_value
+TEMPLATE SGSN 13A-CS                         no_value
+TEMPLATE SGSN 13B-CS                         no_value
+TEMPLATE SGSN 14A-CS                         no_value
+TEMPLATE SGSN 14B-CS                         no_value
+TEMPLATE SpitFire 16A                        SpitFire 16A
+TEMPLATE SpitFire 17A                        SpitFire 17A
+TEMPLATE SpitFire 17B                        SpitFire 17B
+TEMPLATE TSP ECIM                            no_value
+TEMPLATE UPG 1-0-CORE                        UPG 1-0 NE
+TEMPLATE UPG 15A-CORE                        UPG 15A NE
+TEMPLATE UPG 16A-CORE                        UPG 16A NE
+TEMPLATE UPG 16A-FD1-CORE                    UPG 16A FD1 NE
+TEMPLATE UPG 16A-FD2-CORE                    UPG 16A FD2 NE
+TEMPLATE UPG 17A-CORE                        UPG 17A NE
+TEMPLATE WCG 1-2-CORE                        WCG 1.2 NE
+TEMPLATE WCG 14B-CORE                        WCG 14B NE
+TEMPLATE WCG 15A-CORE                        WCG 15A NE
+TEMPLATE WCG 15B-CORE                        WCG 15B NE
+TEMPLATE WCG 16A-CORE                        WCG 16A NE
+TEMPLATE WCG 16B-CORE                        WCG 16B NE
+TEMPLATE WMG 16A-CORE                        WMG 16A NE
+TEMPLATE WMG 16B-CORE                        WMG 16B NE
+TEMPLATE WMG 16B-CP01-CORE                   WMG 16B NE
+TEMPLATE WMG 16B-CP03-CORE                   WMG 16B NE
+TEMPLATE vMTAS 1-5-CORE                      no_value
+TEMPLATE vSBG 1-4-CORE                       vSBG 1.4 NE
+TEMPLATE vWMG 16B-CORE                       vWMG 16B NE
+AXE 1-0                                      AA72 AXE Modern AC-G608 APZ 212 33/52 R3N/17 with APG40 Win2003
+AIPCM-MLPPPRouter SE-800                     AIPCM-ML-PPPRouter SE-800
+AIPCM-MLPPPRouter SE-800-6-1-4-6             AIPCM-ML-PPPRouter SE-800 6-1-4-6
+BSC 06A-APG40                                BSC 06A
+BSC 06A-IOG20                                BSC 06A
+BSC 06B-APG40                                BSC 06B
+BSC 06B-IOG20                                BSC 06B
+BSC 07A-APG40                                BSC 07A
+BSC 07A-APG43                                BSC 07A
+BSC 07A-IOG20                                BSC 07A
+BSC 07B-APG40                                BSC 07B
+BSC 07B-APG43                                BSC 07B
+BSC 07B-IOG20                                BSC 07B
+BSC 08A-APG40                                BSC 08A
+BSC 08A-APG43                                BSC 08A
+BSC 08B-APG40                                BSC 08B
+BSC 08B-APG43                                BSC 08B
+BSC 09A-APG40                                BSC 09A
+BSC 09A-APG43                                BSC 09A
+BSC EXTERNAL                                 External BSC not manageable by OSS
+BSC G10A-APG40                               BSC G10A
+BSC G10A-APG43                               BSC G10A
+BSC G10B-APG40                               BSC G10B
+BSC G10B-APG43                               BSC G10B
+BSC G10B-APG43L                              BSC G10B
+BSC G11B-APG40                               BSC G11B
+BSC G11B-APG43                               BSC G11B
+BSC G11B-APG43L                              BSC G11B
+BSC G12A-APG40                               BSC G12A
+BSC G12A-APG43                               BSC G12A
+BSC G12A-APG43L                              BSC G12A
+BSC G12B-APG40                               BSC G12B
+BSC G12B-APG43                               BSC G12B
+BSC G12B-APG43-EVO8200                       BSC G12B EVO8200
+BSC G12B-APG43L                              BSC G12B
+BSC G13B-APG40                               BSC G13B
+BSC G13B-APG43                               BSC G13B
+BSC G13B-APG43-EVO8200                       BSC G13B EVO8200
+BSC G13B-APG43L                              BSC G13B
+BSC G14B-APG40                               BSC G14B
+BSC G14B-APG43                               BSC G14B
+BSC G14B-APG43-EVO8200                       BSC G14B EVO8200
+BSC G14B-APG43L                              BSC G14B
+BSC G15B-APG40                               BSC G15B
+BSC G15B-APG40-EVO8100                       BSC G15B EVO8100
+BSC G15B-APG40-EVO8200                       BSC G15B EVO8200
+BSC G15B-APG43                               BSC G15B
+BSC G15B-APG43-EVO8100                       BSC G15B EVO8100
+BSC G15B-APG43-EVO8200                       BSC G15B EVO8200
+BSC G15B-APG43L                              BSC G15B
+BSC G15B-APG43L-EVO8100                      BSC G15B EVO8100
+BSC G15B-APG43L-EVO8200                      BSC G15B EVO8200
+BSC G16B-APG40                               BSC G16B
+BSC G16B-APG40-EVO8200                       BSC G16B EVO8200
+BSC G16B-APG43                               BSC G15B
+BSC G16B-APG43-EVO8200                       BSC G16B EVO8200
+BSC G16B-APG43L                              BSC G16B
+BSC G16B-APG43L-EVO8200                      BSC G16B EVO8200
+BSC G17-Q2-APG40                             BSC G17.Q2
+BSC G17-Q2-APG43                             BSC G17.Q2
+BSC G17-Q2-APG43L                            BSC G17.Q2
+BSC G17B-APG40                               BSC G17B
+BSC G17B-APG43                               BSC G15B
+BSC G17B-APG43L                              BSC G17B
+BSC G17Q2-APG40                              BSC G17Q2
+BSC G17Q2-APG43                              BSC G17Q2
+BSC G17Q2-APG43L                             BSC G17Q2
+BSC G17Q3-APG40                              BSC G17Q3
+BSC G17Q3-APG43                              BSC G17Q3
+BSC G17Q3-APG43L                             BSC G17Q3
+BSC G17Q4-APG40                              BSC G17Q4
+BSC G17Q4-APG43                              BSC G17Q4
+BSC G17Q4-APG43L                             BSC G17Q4
+BSC R10-APG40                                BSC R10 Main - APZ 212 25/111
+BSC R10-IOG20                                BSC R10 Main - APZ 212 25/111
+BSC R11-APG40                                BSC R11 Main - APZ 212 30/54 R4A
+BSC R11-IOG20                                BSC R11 Main - APZ 212 30/54 R4A
+BSC R12-APG40                                BSC R12 - APZ 212 30/54 R4A
+BSC R12-IOG20                                BSC R12 - APZ 212 30/54 R4A
+BSC R91APG40                                 BSC R9.1 - APZ 212 30/54
+Firewall Netscreen-100                       Firewall Netscreen-100
+Firewall Netscreen-1000                      Firewall Netscreen-1000
+Firewall Netscreen-204                       Firewall Netscreen-204
+Firewall Netscreen-208                       Firewall Netscreen-208
+Firewall Netscreen-500                       Firewall Netscreen-500
+Firewall Netscreen-ISG1000                   Firewall Netscreen-ISG1000
+Firewall Netscreen-ISG2000                   Firewall Netscreen-ISG2000
+Firewall Netscreen-SSG5                      Firewall Netscreen-SSG5
+Firewall Netscreen-SSG520                    Firewall Netscreen-SSG520
+Firewall Netscreen-SSG550                    Firewall Netscreen-SSG550
+HLR 12B-APG40                                12B + WCDMA CN4.0 - APZ 212 30/54
+HLR 13B                                      13B + WCDMA CN4.0 - APZ 212 30/54
+HLR 15A-APG40                                15A + WCDMA CN4.0 - APZ 214 60F
+HLR 15A-APG43L-AXE                           15A + WCDMA CN4.0 - APZ 212 60F
+HLR 15A-APG43L-BSP                           15A + WCDMA CN4.0 - APZ 212 60F
+HLR 15A-AXE                                  15A + WCDMA CN4.0 - APZ 212 60F
+HLR 15A-BSP                                  15A + WCDMA CN4.0 - APZ 212 60F
+HLR R10                                      R10 + WCDMA CN3.0 - APZ 212 30/54
+HLR R11                                      R11 + WCDMA CN4.0 - APZ 212 30/54
+HLR R15A                                     R15A + WCDMA CN4.0 - APZ 212 60F
+HLR R15A-BSP                                 R15A + WCDMA CN4.0 - APZ 212 60F
+HLR R16A                                     R15A + WCDMA CN4.0 - APZ 212 60F
+HLR R16A-BSP                                 R15A + WCDMA CN4.0 - APZ 212 60F
+HLR R9                                       HLR R9 - APX 101 03/3
+HLR-BS-APG 11B                               GSM 11B + WCDMA CN5.0 - APZ 212 40/54
+HLR-BS-APG 12A                               GSM 12A + WCDMA CN5.0 - APZ 212 40/54
+HLR-BS-APG 12B                               GSM 12B + WCDMA CN5.0 - APZ 212 40/54
+HLR-BS-APG 13B                               GSM 13B + WCDMA CN5.0 - APZ 212 40/54
+HLR-BS-APG43L 15A                            GSM 15A + WCDMA CN5.0 - APZ 212 40/54
+HLR-BS-APG43L 16A                            GSM 15A + WCDMA CN5.0 - APZ 212 40/54
+HLR-BS-APG43L 17A                            GSM 15A + WCDMA CN5.0 - APZ 212 40/54
+HLR-BS-CP 11B                                GSM 11B + WCDMA CN5.0 - APZ 212 40/54
+HLR-BS-CP 12A                                GSM 12A + WCDMA CN5.0 - APZ 212 40/54
+HLR-BS-CP 12B                                GSM 12B + WCDMA CN5.0 - APZ 212 40/54
+HLR-BS-CP 13B                                GSM 13B + WCDMA CN5.0 - APZ 212 40/54
+HLR-BS-CP-APG43L 15A                         GSM 15A + WCDMA CN5.0 - APZ 212 40/54
+HLR-BS-CP-APG43L 16A                         GSM 15A + WCDMA CN5.0 - APZ 212 40/54
+HLR-BS-CP-APG43L 17A                         GSM 15A + WCDMA CN5.0 - APZ 212 40/54
+HLR-BS-IPLB-APG43L R16A                      GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+HLR-BS-SPX 11B                               GSM 11B + WCDMA CN5.0 - APZ 212 40/54
+HLR-BS-SPX 12A                               GSM 12A + WCDMA CN5.0 - APZ 212 40/54
+HLR-BS-SPX 12B                               GSM 12B + WCDMA CN5.0 - APZ 212 40/54
+HLR-BS-SPX 13B                               GSM 13B + WCDMA CN5.0 - APZ 212 40/54
+HLR-BS-SPX-APG43L 15A                        GSM 15A + WCDMA CN5.0 - APZ 212 40/54
+HLR-BS-SPX-APG43L 16A                        GSM 15A + WCDMA CN5.0 - APZ 212 40/54
+HLR-BS-SPX-APG43L 17A                        GSM 15A + WCDMA CN5.0 - APZ 212 40/54
+HLR-FE 1-1-APG43L                            1.1 + WCDMA CN5.0 - APZ 212 40/54
+HLR-FE 15A-APG43L                            16A + WCDMA CN5.0 - APZ 212 40/54
+HLR-FE 16A-APG43L                            16A + WCDMA CN5.0 - APZ 212 40/54
+HLR-FE 16A-APG43L-BSP                        16A + WCDMA CN5.0 - APZ 212 40/54
+HLR-FE 17A-APG43L                            17A + WCDMA CN5.0 - APZ 212 40/54
+HLR-S 11B-APG40                              11B + WCDMA CN5.0 - APZ 212 40/54
+HLR-S 11B-IOG20                              11B+ WCDMA CN5.0 - APZ 212 40/54
+HLR-S 12A-APG40                              12A + WCDMA CN5.0 - APZ 212 40/54
+HLR-S 12A-IOG20                              12A + WCDMA CN5.0 - APZ 212 40/54
+HLR-S 12B-APG40                              12B + WCDMA CN5.0 - APZ 212 40/54
+HLR-S 12B-IOG20                              12B + WCDMA CN5.0 - APZ 212 40/54
+HLR-S 13B-APG40                              13B + WCDMA CN5.0 - APZ 212 40/54
+HLR-S 13B-IOG20                              13B + WCDMA CN5.0 - APZ 212 40/54
+HLR-S R135-APG40                             R13.5 + WCDMA CN5.0 - APZ 212 40/54
+HLR-S R135-IOG20                             R13.5 + WCDMA CN5.0 - APZ 212 40/54
+LANSWITCH 1i                                 EXTREME LANSwitch Summit 1i
+LANSWITCH 24i                                EXTREME LANSwitch Summit 24i
+LANSWITCH 48i                                EXTREME LANSwitch Summit48i
+LANSWITCH 5i                                 EXTREME LANSwitch Summit 5i
+LANSWITCH 7i                                 EXTREME LANSwitch Summit7i
+LANSWITCH BLACK-DIAMOND-8806                 EXTREME LANSwitch Black Diamond 8806
+LANSWITCH BLACK-DIAMOND-x450a                EXTREME LANSwitch Black Diamond x450a
+LANSWITCH BSC-NWI-E-450A                     EXTREME LANSwitch Summit X450a
+LANSWITCH EXTREME-ALPINE                     EXTREME LANSwitch ExtremeAlpine
+LANSWITCH R1                                 EXTREME LANSwitch Summit48si
+ML-PPPRouter SE-400                          ML-PPPRouter SE-400
+ML-PPPRouter SE-800                          ML-PPPRouter SE-800
+MSC 13B-APG40                                GSM 13B + WCDMA CN4.0 - APZ 212 40/54
+MSC 13B-IOG20                                GSM 13B + WCDMA CN4.0 - APZ 212 30/54 R4A
+MSC EXTERNAL                                 External MSC not manageable by OSS
+MSC R10-APG40                                GSM R10 + WCDMA CN3.0 - APZ 212 40/54
+MSC R10-IOG20                                GSM R10 + WCDMA CN3.0 - APZ 212 30/54
+MSC R11-APG40                                GSM R11 + WCDMA CN4.0 - APZ 212 40/54
+MSC R11-IOG20                                GSM R11 + WCDMA CN4.0 - APZ 212 30/54 R4A
+MSC R12-APG40                                GSM R12 + WCDMA CN5.0 - APZ 212 40/54
+MSC R12-IOG20                                GSM R12 + WCDMA CN5.0 (incl HLR) - APZ 212 30/54 R4A
+MSC R121-APG40                               GSM R12.1 + WCDMA CN5.0 - APZ 212 40/54
+MSC R121-IOG20                               GSM R12.1 + WCDMA CN5.0 (incl HLR) - APZ 212 30/54 R4A
+MSC R122-APG40                               GSM R12.2 + WCDMA CN5.0 - APZ 212 40/54
+MSC R122-IOG20                               GSM R12.2 + WCDMA CN5.0 (incl HLR) - APZ 212 30/54 R4A
+MSC R12A-APG40                               GSM R12A + WCDMA CN5.0 - APZ 212 40/54
+MSC R12A-APG43L                              GSM R12A + WCDMA CN5.0 - APZ 212 40/54
+MSC R12B-APG40                               GSM R12B + WCDMA CN5.0 - APZ 212 40/54
+MSC R12B-APG43L                              GSM R12B + WCDMA CN5.0 - APZ 212 40/54
+MSC R13-APG40                                GSM R13 + WCDMA CN5.0 - APZ 212 40/54
+MSC R13-APG43L                               GSM R13 + WCDMA CN5.0 - APZ 212 40/54
+MSC R13-IOG20                                GSM R13 + WCDMA CN5.0 (incl HLR) - APZ 212 30/54 R4A
+MSC R132-APG40                               GSM R13.2 + WCDMA CN5.0 - APZ 212 40/54
+MSC R132-IOG20                               GSM R13.2 + WCDMA CN5.0 (incl HLR) - APZ 212 30/54 R4A
+MSC R13A-APG40                               GSM R13A + WCDMA CN5.0 - APZ 212 40/54
+MSC R13A-APG43L                              GSM R13A + WCDMA CN5.0 - APZ 212 40/54
+MSC R14-APG40                                GSM R14 + WCDMA CN5.0 - APZ 212 40/54
+MSC R14-APG43L                               GSM R14 + WCDMA CN5.0 - APZ 212 40/54
+MSC R14-IOG20                                GSM R14 + WCDMA CN5.0 (incl HLR) - APZ 212 30/54 R4A
+MSC R141-APG40                               GSM R14.1 + WCDMA CN5.0 - APZ 212 40/54
+MSC R141-APG43L                              GSM R14.1 + WCDMA CN5.0 - APZ 212 40/54
+MSC R141-IOG20                               GSM R14.1 + WCDMA CN5.0 (incl HLR) - APZ 212 30/54 R4A
+MSC R14B-APG40                               GSM R14B + WCDMA CN5.0 - APZ 212 40/54
+MSC R14B-APG43L                              GSM R14B + WCDMA CN5.0 - APZ 212 40/54
+MSC R15A-APG40                               GSM R14B + WCDMA CN5.0 - APZ 212 40/54
+MSC R15A-APG43L                              GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+MSC R15B-APG40                               GSM R15B + WCDMA CN5.0 - APZ 212 40/54
+MSC R15B-APG43L                              GSM R15B + WCDMA CN5.0 - APZ 212 40/54
+MSC R16A-APG40                               GSM R14B + WCDMA CN5.0 - APZ 212 40/54
+MSC R16A-APG43L                              GSM R14B + WCDMA CN5.0 - APZ 212 40/54
+MSC R17A-APG40                               GSM R15B + WCDMA CN5.0 - APZ 212 40/54
+MSC R17A-APG43L                              GSM R14B + WCDMA CN5.0 - APZ 212 40/54
+MSC R18A-APG40                               GSM R18A + WCDMA CN5.0 - APZ 212 40/54
+MSC R18A-APG43L                              GSM R18A + WCDMA CN5.0 - APZ 212 40/54
+MSC R91APG40                                 GSM R9.1 + UMTS CN2.0 - APZ 212 30/54
+MSC-IOG20-APG43L R12                         GSM R12 + WCDMA CN5.0 (incl HLR) - APZ 212 30/54 R4A
+MSC-IOG20-APG43L R122                        GSM R12.2 + WCDMA CN5.0 (incl HLR) - APZ 212 30/54 R4A
+MSC-IOG20-APG43L R13                         GSM R13 + WCDMA CN5.0 (incl HLR) - APZ 212 30/54 R4A
+MSC-IOG20-APG43L R132                        GSM R13.2 + WCDMA CN5.0 (incl HLR) - APZ 212 30/54 R4A
+MSC-IOG20-APG43L R14                         GSM R14 + WCDMA CN5.0 (incl HLR) - APZ 212 30/54 R4A
+MSC-IOG20-APG43L R141                        GSM R14.1 + WCDMA CN5.0 (incl HLR) - APZ 212 30/54 R4A
+MSC-IP-STP R15A-APG43L                       GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+MSC-IP-STP R16A-APG43L                       GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+MSC-IP-STP R17A-APG43L                       GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+MSC-IP-STP R18A-APG43L                       GSM R18A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-APG R12A                               GSM R12A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-APG R12B                               GSM R12B + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-APG R13                                GSM R13 + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-APG R13A                               GSM R13A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-APG R14                                GSM R14 + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-APG R141                               GSM R14.1 + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-APG R14B                               GSM R14B + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-APG R15A                               GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-APG R15B                               GSM R15B + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-APG43L R12A                            GSM R12A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-APG43L R12B                            GSM R12B + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-APG43L R13                             GSM R13 + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-APG43L R13A                            GSM R13A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-APG43L R14                             GSM R14 + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-APG43L R141                            GSM R14.1 + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-APG43L R14B                            GSM R14 + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-APG43L R15A                            GSM R15 + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-APG43L R16A                            GSM R15 + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-APG43L R17A                            GSM R15 + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-APG43L R18A                            GSM R15 + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-CP R12A                                GSM R12A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-CP R12B                                GSM R12B + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-CP R13                                 GSM R13 + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-CP R13A                                GSM R13A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-CP R14                                 GSM R14 + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-CP R141                                GSM R14.1 + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-CP R14B                                GSM R14B + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-CP R14B-APG43L                         GSM R14B + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-CP R15A                                GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-CP R15B                                GSM R15B + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-CP-APG43L R12A                         GSM R12A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-CP-APG43L R13                          GSM R13 + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-CP-APG43L R13A                         GSM R13A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-CP-APG43L R141                         GSM R14.1 + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-CP-APG43L R14B                         GSM R14B + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-CP-APG43L R15A                         GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-CP-APG43L R16A                         GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-CP-APG43L R17A                         GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-CP-APG43L R18A                         GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-DB R12B-APG40                          GSM R12B + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-DB R13A-APG40                          GSM R13A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-DB R14B-APG40                          GSM R14B + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-DB R14B-APG43L                         GSM R14B + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-DB R15A-APG40                          GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-DB-APG43L R12A                         GSM R12B + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-DB-APG43L R12B                         GSM R12B + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-DB-APG43L R13A                         GSM R13A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-DB-APG43L R141                         GSM R13A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-DB-APG43L R14B                         GSM R13A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-DB-APG43L R15A                         GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-DB-APG43L R16A                         GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-DB-APG43L R17A                         GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-DB-APG43L R18A                         GSM R18A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-IPLB-APG43L R15A                       GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-IPLB-APG43L R16A                       GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-IPLB-APG43L R17A                       GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-IPLB-APG43L R18A                       GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-SPX R12A                               GSM R12A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-SPX R12B                               GSM R12B + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-SPX R13                                GSM R13 + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-SPX R13A                               GSM R13A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-SPX R14                                GSM R14 + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-SPX R141                               GSM R14.1 + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-SPX R14B                               GSM R14B + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-SPX R14B-APG43L                        GSM R14B + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-SPX R15A                               GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-SPX R15B                               GSM R15B + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-SPX-APG43L R12A                        GSM R12A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-SPX-APG43L R12B                        GSM R12A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-SPX-APG43L R13                         GSM R12A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-SPX-APG43L R13A                        GSM R12A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-SPX-APG43L R14                         GSM R12A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-SPX-APG43L R141                        GSM R14.1 + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-SPX-APG43L R14B                        GSM R14B + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-SPX-APG43L R15A                        GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-SPX-APG43L R16A                        GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-SPX-APG43L R17A                        GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-SPX-APG43L R18A                        GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-TSC R13                                GSM R13 + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-TSC R14                                GSM R14 + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-TSC R141                               GSM R14.1 + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-TSC R15A                               GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-TSC R15B                               GSM R15B + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-TSC-APG43L R12A                        GSM R12A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-TSC-APG43L R12B                        GSM R12B + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-TSC-APG43L R13                         GSM R13 + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-TSC-APG43L R14                         GSM R14 + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-TSC-APG43L R141                        GSM R14.1 + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-TSC-APG43L R14B                        GSM R14B + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-TSC-APG43L R15A                        GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-TSC-APG43L R16A                        GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-TSC-APG43L R17A                        GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+MSC-S-TSC-APG43L R18A                        GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+STN 06A-PSTU                                 PSTU 06A NE
+STN 06B-PSTU                                 PSTU 06B NE
+STN 07B-PICO                                 STN 07B PICO NE
+STN 07B-SIU                                  STN 07B SIU NE
+STN 08A-PICO                                 STN 08A PICO NE
+STN 08A-SIU                                  STN 08A SIU NE
+STN 08B-PICO                                 STN 08B PICO NE
+STN 08B-SIU                                  STN 08B SIU NE
+STN 09A-PICO                                 STN 09A PICO NE
+STN 09A-SIU                                  STN 09A SIU NE
+STN 09A1-SIU                                 STN 09A_1 SIU NE
+STN G10A-PICO                                STN G10A PICO NE
+STN G10A-SIU                                 STN G10A SIU NE
+STN T10A-PICO                    DEPRECATED  STN T10A PICO NE
+STN T10A-SIU01                   DEPRECATED  STN T10A SIU01 NE
+STN T10A-SIU02                   DEPRECATED  STN T10A SIU02 NE
+STN T10B-SIU                     DEPRECATED  STN T10B SIU NE
+STN T11A-PICO                    DEPRECATED  STN T11A PICO NE
+STN T11A-SIU02                   DEPRECATED  STN T11A SIU02 NE
+STN T11B-SIU02                   DEPRECATED  STN T11B SIU02 NE
+STN T11B-TCU                     DEPRECATED  STN T11B TCU NE
+STN T12A-SIU02                   DEPRECATED  STN T12A SIU02 NE
+STN T12A-TCU02                   DEPRECATED  STN T12A TCU NE
+STN T12B-SIU02                   DEPRECATED  STN T12B SIU02 NE
+STN T12B-TCU02                   DEPRECATED  STN T12B TCU NE
+STN T17A-SIU02-5-38-8-V2         TEMPLATE-BASED STN T17A SIU02 5-38-8
+STN T17A-TCU02-7-38-8-V2         TEMPLATE-BASED STN T17A TCU02 7-38-8
+STP R15A-APG43L                              GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+STP R16A-APG43L                              GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+STP R17A-APG43L                              GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+STP R18A-APG43L                              GSM R15A + WCDMA CN5.0 - APZ 212 40/54
+TimeServer 06A                               TimeServer 06A - with ARNE support only
+TimeServer 06B                               TimeServer 06B - with ARNE support only
+TEMPLATE STN T10A                            no_value
+TEMPLATE STN T11A                            no_value
+TEMPLATE STN T14B-ECIM-GSM                   STN T14B TCU NE
+TEMPLATE TCU03 14B                           TCU03 14B NE
+TEMPLATE TCU03 15B                           TCU03 15B NE
+TEMPLATE TCU03 16A                           TCU03 16A NE
+TEMPLATE TCU03 16B                           TCU03 16B NE
+TEMPLATE TCU03 17-Q2                         TCU03 17.Q2 NE
+TEMPLATE TCU03 17-Q4                         TCU03 17.Q4 NE
+TEMPLATE TCU03 17A                           TCU03 17A NE
+TEMPLATE TCU03 17B                           TCU03 17B NE
+TEMPLATE TCU04 16A                           TCU04 16A NE
+TEMPLATE TCU04 16B                           TCU04 16B NE
+TEMPLATE TCU04 17-Q2                         TCU04 17.Q2 NE
+TEMPLATE TCU04 17-Q3                         TCU04 17.Q3 NE
+TEMPLATE TCU04 17-Q4                         TCU04 17.Q4 NE
+TEMPLATE TCU04 17A                           TCU04 17A NE
+TEMPLATE TCU04 17B                           TCU04 17B NE
+TEMPLATE TCU04 C608                          TCU04 C608 NE
+HOTSIP v232                                  HOTSIP v232
+EXB-L3X 07A                                  EXB/L3X LANSWITCH
+HLR-BS-IS 3-1                                Integrated Site SIS 3.1
+IS 1-1                                       Integrated Site SIS 1.1
+MGC 15B                                      Integrated Site SIS 1.1
+MGC 16B                                      Integrated Site SIS 1.1
+MGC 4-2                                      Integrated Site SIS 1.1
+MGC 5-1                                      Integrated Site SIS 1.1
+MGC 5-1-FD2                                  Integrated Site SIS 1.1
+MGC 6-0                                      Integrated Site SIS 1.1
+MGC 6-1                                      Integrated Site SIS 1.1
+MGw 1-2                                      Integrated Site SIS 1.1
+MGw 3-1                                      Integrated Site SIS 1.1
+MSC-S-IS 2-0                                 Integrated Site SIS 2.0
+PRBS 17B-LTE-WCDMA-V3            TEMPLATE-BASED PRBS 17B-LTE-WCDMA V3
+SBG 15B                                      Integrated Site SIS 1.1
+SBG 16B                                      Integrated Site SIS 1.1
+SBG 3-0                                      Integrated Site SIS 1.1
+SBG 3-1                                      Integrated Site SIS 1.1
+TGC 2-0                                      Integrated Site SIS 1.1
+TGC 3-0                                      Integrated Site SIS 1.1
+TEMPLATE IS IS-1-2                           IS 1.2
+TEMPLATE IS IS-2-0                           IS 2.0
+TEMPLATE IS IS-3-1                           IS 3.1
+TEMPLATE IS IS-5-5                           IS 5.5
+TEMPLATE IS IS-8-1                           IS 8.1
+TEMPLATE IS IS-8-3                           IS 8.3
+TEMPLATE MGC 11B                             Integrated Site SIS 3.1
+TEMPLATE MGC 11B-FD1                         Integrated Site SIS 3.1
+TEMPLATE MGC 12A                             Integrated Site SIS 3.1
+TEMPLATE MGC 12A-CP2                         Integrated Site SIS 3.1
+TEMPLATE MGC 13A                             Integrated Site SIS 3.1
+TEMPLATE MGC 13B                             Integrated Site SIS 3.1
+TEMPLATE MGC 14A                             Integrated Site SIS 3.1
+TEMPLATE MGC 14B                             Integrated Site SIS 3.1
+TEMPLATE MGC 15A                             Integrated Site SIS 3.1
+TEMPLATE MGC 16A                             Integrated Site SIS 3.1
+TEMPLATE MGC 16B                             Integrated Site SIS 3.1
+TEMPLATE MGC 17A                             Integrated Site SIS 8.1
+TEMPLATE MGC 17B                             Integrated Site SIS 8.3
+TEMPLATE MGC 6-1                             Integrated Site SIS 3.1
+TEMPLATE MGC 6-1-FD1                         Integrated Site SIS 3.1
+TEMPLATE MGW 2-0-FD2                         Integrated Site SIS 2.0
+TEMPLATE SBG 12A                             Integrated Site SIS 3.1
+TEMPLATE SBG 12B                             Integrated Site SIS 3.1
+TEMPLATE SBG 13A                             Integrated Site SIS 3.1
+TEMPLATE SBG 13B                             Integrated Site SIS 3.1
+TEMPLATE SBG 14A                             Integrated Site SIS 3.1
+TEMPLATE SBG 14B                             Integrated Site SIS 3.1
+TEMPLATE SBG 15A                             Integrated Site SIS 3.1
+TEMPLATE SBG 15B                             Integrated Site SIS 3.1
+TEMPLATE SBG 16A                             Integrated Site SIS 3.1
+TEMPLATE SBG 16B                             Integrated Site SIS 3.1
+TEMPLATE SBG 17A                             Integrated Site SIS 5.5
+TEMPLATE SBG 3-0-FD1                         Integrated Site SIS 1.2
+TEMPLATE SBG 3-1-FD1                         IS 3.1-FD1
+TEMPLATE SBG 4-0                             Integrated Site SIS 3.1
+TEMPLATE SBG 5-3                             Integrated Site SIS 3.1
+TEMPLATE SBG 5-4                             Integrated Site SIS 3.1
+TEMPLATE TGC 3-5                             Integrated Site SIS 1.2
+TEMPLATE TGC 4-0                             Integrated Site SIS 1.2
+TEMPLATE 5GRadioNode 17B                     5G RadioNode
+TEMPLATE 5GRadioNode 18A                     5G RadioNode
+TEMPLATE AXE_BSC 18A                         AXE_V1 18A BSC
+TEMPLATE BSC 17-Q3                           BSC 17.Q3
+TEMPLATE BSC 17B                             BSC 17B
+TEMPLATE ERBS CPP-6-1                        CPP 6.1
+TEMPLATE ERBS CPP-7-0                        CPP 7.0
+TEMPLATE ERBS CPP-8-0                        CPP 8.0
+TEMPLATE ERBS CPP-9-0                        CPP 9.0
+FrontHaul-6080 17B                           FrontHaul-6080_17B
+TEMPLATE HP-NFVO 17B                         HP-NFVO 17A
+TEMPLATE MSRBS_V2 15B                        MSRBS_V2 15B SSR
+TEMPLATE MSRBS_V2 15B-LTE                    MSRBS_V2 15B LTE SSR
+TEMPLATE MSRBS_V2 16A                        MSRBS_V2 15B SSR
+TEMPLATE MSRBS_V2 16B                        MSRBS_V2 15B SSR
+TEMPLATE MSRBS_V2 17-Q1                      MSRBS_V2 17-Q1 SSR
+TEMPLATE MSRBS_V2 17-Q2                      MSRBS_V2 17-Q2 SSR
+TEMPLATE MSRBS_V2 17-Q3                      MSRBS_V2 17-Q3 SSR
+TEMPLATE MSRBS_V2 17-Q4                      MSRBS_V2 17-Q4 SSR
+TEMPLATE MSRBS_V2 17A                        MSRBS_V2 15B SSR
+TEMPLATE MSRBS_V2 17A-RUI                    MSRBS-V2 17A-RUI
+TEMPLATE MSRBS_V2 17B                        MSRBS_V2 15B SSR
+TEMPLATE MSRBS_V2 17B-RUI                    MSRBS-V2 17B-RUI
+TEMPLATE MSRBS_V2 71A-UPGIND                 MSRBS_V2 71A-UPGIND
+TEMPLATE PRBS 13A-LTE                        no_value
+TEMPLATE PRBS 13B-LTE                        no_value
+TEMPLATE PRBS 14A-LTE                        no_value
+TEMPLATE PRBS 14B-LTE                        no_value
+TEMPLATE PRBS 15B-LTE                        no_value
+TEMPLATE PRBS 16A-LTE                        no_value
+TEMPLATE PRBS 61A-UPGIND-LTE                 no_value
+TEMPLATE RAN-VNFM 17A                        RAN-VNFM 17A
+TEMPLATE RAN-VNFM 18A                        RAN-VNFM 18A
+TEMPLATE RANOS FOR-CPP-7-0-ERBS
+TEMPLATE RANOS FOR-CPP-8-0-ERBS
+TEMPLATE RANOS FOR-CPP-9-0-ERBS
+TEMPLATE RNNODE 17A                          RNNODE 17A
+TEMPLATE RNNODE 17B                          RNNODE 17B
+TEMPLATE RNNODE 18A                          RNNODE 18A
+TEMPLATE RNNODE 71A-UPGIND                   RNNODE 71A-UPGIND
+TEMPLATE VTFRadioNode 17B                    VTF RadioNode
+TEMPLATE VTFRadioNode 18A                    VTF RadioNode
+TEMPLATE vPP 17A                             vPP 17A
+TEMPLATE vPP 17B                             vPP 17B
+TEMPLATE vPP 18A                             vPP 18A
+TEMPLATE vPP 71A                             vPP 71A
+TEMPLATE vRC 17A                             vRC 17A
+TEMPLATE vRC 17B                             vRC 17B
+TEMPLATE vRC 18A                             vRC 18A
+TEMPLATE vRC 71A                             vRC 71A
+TEMPLATE vSD 17B                             vSD 17B
+TEMPLATE vSD 18A                             vSD 18A
+MN-OSS NB                                    Northbound interface of MN-OSS
+OSS FOR-OSS-RC                               Simulated OSS for testing OSS-RC NEs
+OSS-RC R7                                    Simulated OSS-RC R7
+TEMPLATE Colocated-EPG-EPDG 14B-             no_value
+TEMPLATE Colocated_EPG_EPDG 14B-             no_value
+TEMPLATE ESASN 14A-SSR                       no_value
+TEMPLATE ESASN 14B-SSR                       no_value
+TEMPLATE ESASN 15B-SSR                       no_value
+TEMPLATE ESASN 16A-CP02-SSR                  no_value
+TEMPLATE ESASN 16A-SSR                       no_value
+TEMPLATE ESASN 16B-SSR                       no_value
+TEMPLATE MultiApp 14B-SSR                    no_value
+SAN R2                                       SAN R2 on AST-CM
+SDN 1-0                                      SDN 1.0
+SPNOVA 1-0                                   SPNOVA 1.0
+OSS FOR-FTP                                  Test server for FTP-client nodes
+OSS FOR-SSH                                  Test client for SSH-based nodes
+TEST SSH                                     Test NE for SSH
+OSS FOR-APG40                                Simulated OSS suitable for communication with APG40 NEs
+OSS FOR-IOG20                                Simulated OSS suitable for communication with IOG20 NEs
+AXE AXE10602-AXE                             AXE 106 02 + WCDMA CN5.0 - APZ 212 40/54
+AXE AXE10606-AXE                             AXE 106 06 + WCDMA CN5.0 - APZ 212 40/54
+AXE AXE106108-AXE                            AXE 106 108 + WCDMA CN5.0 - APZ 212 40/54
+AXE AXE106109-AXE                            AXE 106 109 + WCDMA CN5.0 - APZ 212 40/54
+AXE AXE106113-AXE                            AXE 106 113 + WCDMA CN5.0 - APZ 212 40/54
+AXE AXE106117-AXE                            AXE 106 117 + WCDMA CN5.0 - APZ 212 40/54
+AXE AXE106119-AXE                            AXE 106 119 + WCDMA CN5.0 - APZ 212 40/54
+AXE AXE106120-AXE                            AXE 106 120 + WCDMA CN5.0 - APZ 212 40/54
+AXE AXE106120-IOG20                          AXE 106 120 + WCDMA CN5.0 - APZ 212 33/53 - IOG 20
+EIR 1-1                                      EIR 1.1 on ESA
+EIR 1-3                                      EIR 1.3 on ESA
+EIR 14B                                      EIR 14B on EBS
+EIR 16B                                      EIR 16B on EBS
+EIR 17A                                      EIR 17A on EBS
+EIR-FE 1-1                                   EIR-FE 1.1 on ESA
+EIR-FE 14B                                   EIR-FE 14B on EBS
+EIR-FE R1                                    EIR-FE R1 on EBS
+ALARM-EXP CPP                                EXPERIMENTAL CPP NE FOR ALARM SENDING
+NMS FMR6
+NMS INC6
+NMS WEGA                                     NMS for OSS RC R2 and later
+NMS WILMAINC2
+NMS WILMAINC3
+OCC 1-0                                      CPP 8.0
+OCC 2-6-0                                    CPP-OCC 9.0
+OCC 3-0                                      CPP-OCC 9.0
+OCC 3-1-0                                    CPP-OCC 3.1.0
+RANOSNMS FMR6
+RANOSNMS INC6
+RANOSNMS WEGA
+RANOSNMS WILMAINC2
+RANOSNMS WILMAINC3
+TEMPLATE DSC 13A-WCDMA                       no_value
+TEMPLATE DSC 14A-WCDMA                       no_value
+TEMPLATE DSC 15A-WCDMA                       no_value
+TEMPLATE DSC 15B-WCDMA                       no_value
+TEMPLATE DSC 16A-WCDMA                       no_value
+TEMPLATE DSC 16B-WCDMA                       no_value
+TEMPLATE DSC 17A-WCDMA                       no_value
+TEMPLATE DSC 17B-WCDMA                       no_value
+TEMPLATE EME 1-0-WCDMA                       no_value
+TEMPLATE EME 1-1-WCDMA                       no_value
+TEMPLATE EME 16A-WCDMA                       no_value
+TEMPLATE EME 16B-WCDMA                       no_value
+TEMPLATE EME 17A-WCDMA                       no_value
+TEMPLATE EPG-WMG 15B                         no_value
+TEMPLATE EPG-WMG 16B                         no_value
+TEMPLATE M-MGw CELLO-4-3                     M-MGw 3.X CPP 4.3
+TEMPLATE M-MGw CPP-5-0                       M-MGw R4.0 CPP 5.0
+TEMPLATE M-MGw CPP-5-1                       M-MGw R4.1/R4.2 CPP 5.1
+TEMPLATE M-MGw CPP-6-0                       M-MGw R5.0 CPP 6.0
+TEMPLATE M-MGw CPP-6-1                       M-MGw R5.0/R5.1 CPP 6.1
+TEMPLATE M-MGw CPP-7-0                       M-MGw R6.0 CPP 7.0
+TEMPLATE M-MGw CPP-8-0                       M-MGw R6.1 CPP 8.0
+TEMPLATE M-MGw CPP-9-0                       M-MGw R6.1 CPP 9.0
+TEMPLATE PRBS 13A-WCDMA                      no_value
+TEMPLATE PRBS 13B-WCDMA                      no_value
+TEMPLATE PRBS 14A-WCDMA                      no_value
+TEMPLATE PRBS 14B-WCDMA                      no_value
+TEMPLATE PRBS 15A-WCDMA                      no_value
+TEMPLATE PRBS 15B-WCDMA                      no_value
+TEMPLATE PRBS 16A-WCDMA                      no_value
+TEMPLATE PRBS 16B-WCDMA                      no_value
+TEMPLATE PRBS 17A-LTE-WCDMA                  no_value
+TEMPLATE PRBS 17B-LTE-WCDMA                  no_value
+TEMPLATE RANOS FOR-CELLO-4
+TEMPLATE RANOS FOR-CPP-5-0
+TEMPLATE RANOS FOR-CPP-5-1
+TEMPLATE RANOS FOR-CPP-6-0
+TEMPLATE RANOS FOR-CPP-6-1
+TEMPLATE RANOS FOR-CPP-7-0
+TEMPLATE RANOS FOR-CPP-8-0
+TEMPLATE RANOS FOR-CPP-9-0
+TEMPLATE RBS CELLO-4-3                       CPP 4.3
+TEMPLATE RBS CPP-5-0                         CPP 5.0
+TEMPLATE RBS CPP-5-1                         CPP 5.1
+TEMPLATE RBS CPP-6-0                         CPP 6.0
+TEMPLATE RBS CPP-6-1                         CPP 6.1
+TEMPLATE RBS CPP-7-0                         CPP 7.0
+TEMPLATE RBS CPP-8-0                         CPP 8.0
+TEMPLATE RBS CPP-9-0                         CPP 9.0
+TEMPLATE RBS G2-WCDMA                        no_value
+TEMPLATE RNC CELLO-4-3                       CPP 4.3
+TEMPLATE RNC CPP-5-0                         CPP 5.0
+TEMPLATE RNC CPP-5-1                         CPP 5.1
+TEMPLATE RNC CPP-6-0                         CPP 6.0
+TEMPLATE RNC CPP-6-1                         CPP 6.1
+TEMPLATE RNC CPP-7-0                         CPP 7.0
+TEMPLATE RNC CPP-8-0                         CPP 8.0
+TEMPLATE RNC CPP-9-0                         CPP 9.0
+TEMPLATE RXI CELLO-4-3                       CPP 4.3
+TEMPLATE RXI CPP-5-0                         CPP 5.0
+TEMPLATE RXI CPP-5-1                         CPP 5.1
+TEMPLATE RXI CPP-6-0                         CPP 6.0
+TEMPLATE RXI CPP-6-1                         CPP 6.1
+TEMPLATE RXI CPP-7-0                         CPP 7.0
+TEMPLATE RXI CPP-8-0                         CPP 8.0
+TEMPLATE RXI CPP-9-0                         CPP 9.0
+SGSN 16A-CP01-WPP-V1             TEMPLATE-BASED SGSN 16A-CP01-WPP V1
+TEMPLATE SGSN 1-5-WPP                        ECIM based SGSN 13B with SNMP and SSH support
+TEMPLATE SGSN 1-6-WPP                        ECIM based SGSN 13B with SNMP and SSH support
+TEMPLATE SGSN 13B-WPP                        ECIM based SGSN 13B with SNMP and SSH support
+TEMPLATE SGSN 14A-WPP                        ECIM based SGSN 13B with SNMP and SSH support
+TEMPLATE SGSN 15A-WPP                        ECIM based SGSN 13B with SNMP and SSH support
+TEMPLATE SGSN 15B-CP01-WPP                   ECIM based SGSN 13B with SNMP and SSH support
+TEMPLATE SGSN 15B-WPP                        ECIM based SGSN 13B with SNMP and SSH support
+TEMPLATE SGSN 16A-CP01-WPP                   ECIM based SGSN 13B with SNMP and SSH support
+TEMPLATE SGSN 16A-CP02-WPP                   ECIM based SGSN 13B with SNMP and SSH support
+TEMPLATE SGSN 16A-CP03-WPP                   ECIM based SGSN 13B with SNMP and SSH support
+TEMPLATE SGSN 16A-CP04-WPP                   ECIM based SGSN 13B with SNMP and SSH support
+TEMPLATE SGSN 16A-CP06-WPP                   ECIM based SGSN 13B with SNMP and SSH support
+TEMPLATE SGSN 16A-CP07-WPP                   ECIM based SGSN 13B with SNMP and SSH support
+TEMPLATE SGSN 16A-CP08-WPP                   ECIM based SGSN 13B with SNMP and SSH support
+TEMPLATE SGSN 16A-CP09-WPP                   ECIM based SGSN 13B with SNMP and SSH support
+TEMPLATE SGSN 16A-WPP                        ECIM based SGSN 13B with SNMP and SSH support
+TEMPLATE SGSN 16A_CP03-WPP                   ECIM based SGSN 13B with SNMP and SSH support
+RBS S21100-lim                   TEMPLATE-BASED WCDMA RBS MIM S2.1.100 CPP 9.0
+RBS U4110-lim                    TEMPLATE-BASED WCDMA RBS MIM U.4.110 CPP 9.0
+RBS U4210-lim                    TEMPLATE-BASED WCDMA RBS MIM U.4.210 CPP 9.0
+RBS U4211-lim                    TEMPLATE-BASED WCDMA RBS MIM U.4.211 CPP 9.0
+RBS U4300-lim                    TEMPLATE-BASED WCDMA RBS MIM U.4.300 CPP 9.0
+RBS U4340-lim                    TEMPLATE-BASED WCDMA RBS MIM U.4.340 CPP 9.0
+RBS U4330-lim                    TEMPLATE-BASED WCDMA RBS MIM U.4.330 CPP 9.0
+RBS U4341-lim                    TEMPLATE-BASED WCDMA RBS MIM U.4.341 CPP 9.0
+RBS U4460-lim                    TEMPLATE-BASED WCDMA RBS MIM U.4.460 CPP 9.0
+RBS U4630-lim                    TEMPLATE-BASED WCDMA RBS MIM U.4.630 CPP 9.0
+RBS U4650-lim                    TEMPLATE-BASED WCDMA RBS MIM U.4.650 CPP 9.0
+RBS U4570-lim                    TEMPLATE-BASED WCDMA RBS MIM U.4.570 CPP 9.0
+RBS U4700-lim                    TEMPLATE-BASED WCDMA RBS MIM U.4.700 CPP 9.0
+RBS U4720-lim                    TEMPLATE-BASED WCDMA RBS MIM U.4.720 CPP 9.0
+RBS U4750-lim                    TEMPLATE-BASED WCDMA RBS MIM U.4.750 CPP 9.0
+RNC V53303-lim                   TEMPLATE-BASED WCDMA RNC MIM V.5.3303 CPP 9.0
+RNC V10304-lim                   TEMPLATE-BASED WCDMA RNC MIM V.10.304 CPP 9.0
+RNC V10442-lim                   TEMPLATE-BASED WCDMA RNC MIM V.10.442 CPP 9.0
+RNC V10305-lim                   TEMPLATE-BASED WCDMA RNC MIM V.10.305 CPP 9.0
+RNC V91240-lim                   TEMPLATE-BASED WCDMA RNC MIM V.9.1240 CPP 9.0
+RNC V6940-lim                    TEMPLATE-BASED WCDMA RNC MIM V.6.940 CPP 9.0
+RNC V6894-lim                    TEMPLATE-BASED WCDMA RNC MIM V.6.894 CPP 9.0
+RNC V71202-lim                   TEMPLATE-BASED WCDMA RNC MIM V.7.1202 CPP 9.0
+RNC V71659-lim                   TEMPLATE-BASED WCDMA RNC MIM V.7.1659 CPP 9.0
+RNC V71543-lim                   TEMPLATE-BASED WCDMA RNC MIM V.7.1543 CPP 9.0
+RNC V81349-lim                   TEMPLATE-BASED WCDMA RNC MIM V.8.1349 CPP 9.0
+RNC V81339-lim                   TEMPLATE-BASED WCDMA RNC MIM V.8.1339 CPP 9.0
+RNC V11243-lim                   TEMPLATE-BASED WCDMA RNC MIM V.11.243 CPP 9.0
+RNC V11338-lim                   TEMPLATE-BASED WCDMA RNC MIM V.11.338 CPP 9.0
+RNC V54658-lim                   TEMPLATE-BASED WCDMA RNC MIM V.5.4658 CPP 9.0
+RNC V60-lim                   	 TEMPLATE-BASED WCDMA RNC MIM V.6.0 CPP 9.0
+RNC V1240-lim                    TEMPLATE-BASED WCDMA RNC MIM V.12.40 CPP 9.0
+ERBS H1160-V2lim                 TEMPLATE-BASED LTE ERBS MIM H.1.160 CPP 9.0
+ERBS G1101-lim                   TEMPLATE-BASED LTE ERBS MIM G.1.101 CPP 9.0
+ERBS G1123-lim                   TEMPLATE-BASED LTE ERBS MIM G.1.123 CPP 9.0
+ERBS G1132-lim                   TEMPLATE-BASED LTE ERBS MIM G.1.132 CPP 9.0
+ERBS G1220-V1lim                 TEMPLATE-BASED LTE ERBS MIM G.1.220 CPP 9.0
+ERBS H1320-lim                   TEMPLATE-BASED LTE ERBS MIM H.1.320 CPP 9.0
+ERBS H1351-lim                   TEMPLATE-BASED LTE ERBS MIM H.1.351 CPP 9.0
+ERBS H999240-V5lim               TEMPLATE-BASED LTE ERBS MIM H.999.240 CPP 9.0
+ERBS J1180-lim                   TEMPLATE-BASED LTE ERBS MIM J.1.180 CPP 9.0
+ERBS J180-lim                    TEMPLATE-BASED LTE ERBS MIM J.1.80 CPP 9.0
+ERBS J1120-lim                   TEMPLATE-BASED LTE ERBS MIM J.1.120 CPP 9.0
+ERBS J1160-lim                   TEMPLATE-BASED LTE ERBS MIM J.1.160 CPP 9.0
+ERBS H1263-lim                   TEMPLATE-BASED LTE ERBS MIM H.1.263 CPP 9.0
+ERBS G1301-lim                   TEMPLATE-BASED LTE ERBS MIM G.1.301 CPP 9.0
+ERBS G1302-lim                   TEMPLATE-BASED LTE ERBS MIM G.1.302 CPP 9.0
+ERBS G1303-lim                   TEMPLATE-BASED LTE ERBS MIM G.1.303 CPP 9.0
+ERBS G1304-lim                   TEMPLATE-BASED LTE ERBS MIM G.1.304 CPP 9.0
+ERBS G1123-lim                   TEMPLATE-BASED LTE ERBS MIM G.1.123 CPP 9.0
+ERBS G1140-lim                   TEMPLATE-BASED LTE ERBS MIM G.1.140 CPP 9.0
+ERBS H1120-lim                   TEMPLATE-BASED LTE ERBS MIM H.1.120 CPP 9.0
+ERBS H1140-V1lim                 TEMPLATE-BASED LTE ERBS MIM H.1.140 CPP 9.0
+ERBS H1220-lim                   TEMPLATE-BASED LTE ERBS MIM H.1.220 CPP 9.0
+ERBS H1240-lim                   TEMPLATE-BASED LTE ERBS MIM H.1.240 CPP 9.0
+ERBS H1263-lim                   TEMPLATE-BASED LTE ERBS MIM H.1.263 CPP 9.0
+ERBS H180-lim                    TEMPLATE-BASED LTE ERBS MIM H.1.80 CPP 9.0
+ERBS J122-lim                    TEMPLATE-BASED LTE ERBS MIM J.1.22 CPP 9.0
+ERBS J140-lim                    TEMPLATE-BASED LTE ERBS MIM J.1.40 CPP 9.0
+ERBS J1200-lim                   TEMPLATE-BASED LTE ERBS MIM J.1.200 CPP 9.0
+ERBS J1240-V1lim                 TEMPLATE-BASED LTE ERBS MIM J.1.240 CPP 9.0
+MSRBS-V2 16A-V18                 TEMPLATE-BASED MSRBS-V2 16A-V18
+MSRBS-V2 16A-V14                 TEMPLATE-BASED MSRBS-V2 16A-V14
+MSRBS-V2 16B-V13                 TEMPLATE-BASED MSRBS-V2 16B-V13
+MSRBS-V2 16B-V11                 TEMPLATE-BASED MSRBS-V2 16B-V11
+MSRBS-V2 17A-V12                 TEMPLATE-BASED MSRBS-V2 17A-V12
+MSRBS-V2 17A-V10                 TEMPLATE-BASED MSRBS-V2 17A-V10
+MSRBS-V2 17A-V9                  TEMPLATE-BASED MSRBS-V2 17A-V9
+MSRBS-V2 17A-V5                  TEMPLATE-BASED MSRBS-V2 17A-V5
+MSRBS-V2 17A-V4                  TEMPLATE-BASED MSRBS-V2 17A-V4
+MSRBS-V2 17A-V2                  TEMPLATE-BASED MSRBS-V2 17A-V2
+MSRBS-V2 17B-V14                 TEMPLATE-BASED MSRBS-V2 17B-V14
+MSRBS-V2 17B-V12                 TEMPLATE-BASED MSRBS-V2 17B-V12
+MSRBS-V2 17B-V11                 TEMPLATE-BASED MSRBS-V2 17B-V11
+MSRBS-V2 17B-RUI-V5              TEMPLATE-BASED MSRBS-V2 17B-RUI-V5
+MSRBS-V2 17B-RUI-V4              TEMPLATE-BASED MSRBS-V2 17B-RUI-V4
+MSRBS-V2 17B-V3                  TEMPLATE-BASED MSRBS-V2 17B-V3
+MSRBS-V2 17B-V2                  TEMPLATE-BASED MSRBS-V2 17B-V2
+MSRBS-V2 17-Q1-V1                TEMPLATE-BASED MSRBS-V2 17-Q1-V1
+MSRBS-V2 17-Q3-V1                TEMPLATE-BASED MSRBS-V2 17-Q3-V1
+MSRBS-V2 17-Q3-V2                TEMPLATE-BASED MSRBS-V2 17-Q3-V2
+MSRBS-V2 17-Q4-V2                TEMPLATE-BASED MSRBS-V2 17-Q4-V2
+MSRBS-V2 17-Q4-V4                TEMPLATE-BASED MSRBS-V2 17-Q4-V4
+MSRBS-V2 17-Q4-V5                TEMPLATE-BASED MSRBS-V2 17-Q4-V5
+MSRBS-V2 18-Q1-V2                TEMPLATE-BASED MSRBS-V2 18-Q1-V2
+MSRBS-V2 18-Q1-V4                TEMPLATE-BASED MSRBS-V2 18-Q1-V4
+MSRBS-V2 18-Q2-V1                TEMPLATE-BASED MSRBS-V2 18-Q2-V1
+PRBS 17B-LTE-WCDMA-V3            TEMPLATE-BASED PRBS 17B-LTE-WCDMA-V3
+PRBS 61AW-UPGIND-V2              TEMPLATE-BASED PRBS 61AW-UPGIND-V2
+PRBS 18A-LTE-WCDMA-V2            TEMPLATE-BASED PRBS 18A-LTE-WCDMA-V2
+

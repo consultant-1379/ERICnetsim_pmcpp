@@ -1,0 +1,5 @@
+#!/bin/sh
+echo "Genstats installation started..";
+#wget ftp://simadmin:simadmin@ftp.athtem.eei.ericsson.se/genstats/python_libs/python-pycrypto-2.6.1-1.1.x86_64.rpm -P /tmp/python_lib
+#rpm -ivh /tmp/python_lib/python-pycrypto-2.6.1-1.1.x86_64.rpm
+rm -rf /netsim_users/pms/logs/*.*

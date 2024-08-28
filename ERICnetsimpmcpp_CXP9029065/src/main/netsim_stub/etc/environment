@@ -1,0 +1,6 @@
+[Select]
+select_arg = network
+
+[Open]
+sim_name = LTE-ERBS-G_1_101
+

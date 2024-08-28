@@ -1,0 +1,5 @@
+#!/bin/sh
+#cd /tmp/python_lib
+#bash setup.sh
+#rm -rf /tmp/python_lib
+echo "Genstats installation finished..";

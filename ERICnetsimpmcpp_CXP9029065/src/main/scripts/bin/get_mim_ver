@@ -1,0 +1,149 @@
+#!/usr/bin/env perl
+
+################################################################################
+# COPYRIGHT Ericsson 2017
+#
+# The copyright to the computer program(s) herein is the property of
+# Ericsson Inc. The programs may be used and/or copied only with written
+# permission from Ericsson Inc. or in accordance with the terms and
+# conditions stipulated in the agreement/contract under which the
+# program(s) have been supplied.
+################################################################################
+
+###################################################
+# Version no    :  NSS 17.12
+# Purpose       :  Script is responsible to fetch mim version of a simulation
+# Jira No       :  NSS-13299,13300,13301
+# Gerrit Link   :  
+# Description   :  Router node support (6371, 6471-1, 6471-2)
+# Date          :  31/08/2017
+# Last Modified :  abhishek.mandlewala@tcs.com
+####################################################
+
+use strict;
+use warnings;
+
+use Getopt::Long;
+
+our $DEBUG = 0;
+
+our $IS_GRAN_SIM = "NO";
+
+
+main();
+
+
+sub main {
+
+    my ($sim,$netype);
+    my $result = GetOptions("netype=s" => \$netype,
+                            "sim=s" => \$sim,
+                            "isgransim=s" => \$IS_GRAN_SIM,
+                            "debug=s" => \$DEBUG
+    );
+    ($result == 1) or die "Invalid args";
+    if ( (! defined $sim) || (! defined $netype) ) {
+        print "Usage: get_mim_ver --sim <SIM> --netype <NETYPE>\n";
+        exit 1;
+    }
+
+    if ( ! -r "/tmp/showstartednodes.txt" ) {
+        system("echo '.show started' | /netsim/inst/netsim_pipe > /tmp/showstartednodes.txt");
+    }
+
+    if ( ! -r "/tmp/nodetypes.txt" ) {
+       system("echo '.show netypes' | /netsim/inst/netsim_pipe > /tmp/nodetypes.txt");
+    }
+
+
+    my $managledMIM = getMangled($sim,$netype,"/tmp/showstartednodes.txt");
+    if ( ! defined $managledMIM ) {
+        print "ERROR: No match\n";
+        exit 1;
+    }
+
+    my $fullMIM;
+    # ECIM Nodes does not have MIM versions but have NE version therefore fetch
+    # NE version from managledMIM for ECIM nodes
+    if (  $netype eq "PRBS" || $netype eq "DSC" || $netype eq "ESAPC" || $netype eq "TCU03" || $netype eq "TCU04" || $netype eq "SGSN" || $netype eq "MSRBS-V2" || $netype eq "SpitFire" || $netype eq "M-MGw" || $netype eq "CSCF" || $netype eq "MTAS" || $netype eq "SBG" || $netype eq "WCG" || $netype eq "EPG-SSR" ||  $netype eq "EPG-EVR" || $netype eq "HSS-FE" || $netype eq "RNNODE" || $netype eq "vPP" || $netype eq "vRC" || $netype eq "MRSv" || $netype eq "IPWORKS" || $netype eq "MRFv" || $netype eq "UPG" || $netype eq "WMG" || $netype eq "EME" || $netype eq "VTFRadioNode" || $netype eq "5GRadioNode" || $netype eq "R6274" || $netype eq "R6672" || $netype eq "R6675" || $netype eq "R6371" || $netype eq "R6471-1" || $netype eq "R6471-2" || $netype eq "vRM" ) {
+        if ( $netype eq "SGSN" || $netype eq "MSRBS-V2" || $netype eq "PRBS" ) {
+            $fullMIM = $managledMIM;
+        }
+        else {
+            my $sep="-";
+            my $pos = index ($managledMIM, $sep);
+            $fullMIM = substr ($managledMIM,0,$pos);
+        }
+    }
+    else {
+        # For CPP nodes fetch the MIM version
+        $fullMIM = getFullMim($managledMIM,$netype,"/tmp/nodetypes.txt");
+
+        # if fullMIM is undefined then read the netypes again and fetch the fullMIM from it
+        if ( ! defined $fullMIM ) {
+            # Store the netypes in temp file /tmp/netypes.tmp.txt
+            system("echo '.show netypes' | /netsim/inst/netsim_pipe > /tmp/nodetypes.tmp.txt");
+            $fullMIM = getFullMim($managledMIM,$netype,"/tmp/nodetypes.tmp.txt");
+        }
+    }
+
+    print "$fullMIM\n";
+}
+
+sub getMangled($$$) {
+    my ($sim,$netype,$file) = @_;
+
+    my ($thisType,$thisMim);
+    my $result = undef;
+    open INPUT, $file or die "Cannot open $file";
+    while ( (! defined $result) && (my $line = <INPUT>) ) {
+        if ( $DEBUG > 9 ) { print "getMangled: line=$line"; }
+        if ( $line =~ /server_.* for \S+ (\S+) (\S+)/ ) {
+            ($thisType,$thisMim) = ($1,$2);
+            $thisMim =~ s/,$//;
+            if ( $DEBUG > 8 ) { print "getMangled: thisType=$thisType thisMim=$thisMim\n"; }
+        } else {
+            if ( (defined $thisType) && ($thisType eq $netype ) ) {
+
+               if (  $netype eq "DSC" || $netype eq "ESAPC" || $netype eq "TCU03" || $netype eq "TCU04" || $netype eq "SGSN" || $netype eq "SpitFire" || $netype eq "M-MGw"  || $netype eq "CSCF" || $netype eq "MTAS" || $netype eq "SBG" || $netype eq "WCG" ||  $netype eq "EPG-SSR" ||  $netype eq "EPG-EVR" || $netype eq "HSS-FE" || $netype eq "RNNODE" || $netype eq "vPP" || $netype eq "vRC" || $netype eq "MRSv" || $netype eq "IPWORKS" || $netype eq "MRFv" || $netype eq "UPG" || $netype eq "WMG" || $netype eq "RBS" || $netype eq "EME" || $netype eq "VTFRadioNode" || $netype eq "5GRadioNode" || $netype eq "R6274" || $netype eq "R6672" || $netype eq "R6675" || $netype eq "R6371" || $netype eq "R6471-1" || $netype eq "R6471-2" || $IS_GRAN_SIM eq "YES" || $netype eq "vRM" )  {
+
+                   if ( $line =~ /$sim/ ) {
+                       $result = $thisMim;
+                   }
+
+               } else {
+
+                   if ( $line =~ /-$sim/ ) {
+                       $result = $thisMim;
+                   }
+               }
+            }
+        }
+    }
+
+    close INPUT;
+
+    if ( $DEBUG > 0 ) { print "getMangled: result=", $result, "\n"; }
+    return $result;
+}
+
+sub getFullMim($$) {
+   my ($managledMIM,$netype,$file) = @_;
+
+   if ( $DEBUG > 2 ) { print "getFullMim: managledMIM=\"$managledMIM\" netype=$netype\n"; }
+
+   open INPUT, $file or die "Cannot open $file";
+   my $result = undef;
+   while ( (! defined $result) && (my $line = <INPUT>) ) {
+       if ( $DEBUG > 9 ) { print "getFullMim: line=$line"; }
+       if ( $line =~ /^$netype $managledMIM .* MIM (\S+)/ ) {
+           $result = $1;
+       }
+   }
+
+    close INPUT;
+
+    if ( $DEBUG > 0 ) { print "getFullMim: result=", $result, "\n"; }
+    return $result;
+}
+

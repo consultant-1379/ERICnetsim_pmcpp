@@ -1,0 +1,198 @@
+#!/bin/bash
+
+################################################################################
+# COPYRIGHT Ericsson 2016
+#
+# The copyright to the computer program(s) herein is the property of
+# Ericsson Inc. The programs may be used and/or copied only with written
+# permission from Ericsson Inc. or in accordance with the terms and
+# conditions stipulated in the agreement/contract under which the
+# program(s) have been supplied.
+################################################################################
+
+###################################################
+# Version no    :  NSS 17.17
+# Purpose       :  Script is responsible for deleting older file/link for stats/events
+# Jira No       :  NSS-15546
+# Gerrit Link   :  https://gerrit.ericsson.se/#/c/2906126/
+# Description   :  Handling for MSC nodes support.
+# Date          :  14/11/2017
+# Last Modified :  r.t2@tcs.com
+####################################################
+
+# $Id: rmPmFiles 88 2012-01-26 12:49:46Z eeicmuy $
+
+#
+# These are defaults. Do NOT edit them. If you want different values, then set them
+# in the netsim_cfg
+#
+XML_RETENTION=26
+BIN_RETENTION=1
+
+if [ -r /netsim/netsim_cfg ] ; then
+    . /netsim/netsim_cfg > /dev/null 2>&1
+fi
+
+BIN_DIR=`dirname $0`
+BIN_DIR=`cd ${BIN_DIR} ; pwd`
+
+. ${BIN_DIR}/functions
+
+
+# Rentention in hours
+
+while getopts  "x:b:" flag
+do
+    case "$flag" in
+        x) XML_RETENTION="$OPTARG";;
+        b) BIN_RETENTION="$OPTARG";;
+
+        *) printf "Usage: %s [-x XML_RETENTION in hours] [-b BIN_RETENTION in hours]" $0
+           exit 1;;
+    esac
+done
+
+XML_RETENTION_MIN=`expr $XML_RETENTION \* 60`
+BIN_RETENTION_MIN=`expr $BIN_RETENTION \* 60`
+
+OUT_ROOT=/netsim_users
+if [ -d /pms_tmpfs ] ; then
+    OUT_ROOT=/pms_tmpfs
+fi
+
+SIM_DIR="/netsim/netsim_dbdir/simdir/netsim/netsimdir"
+EPG_SIM_LIST=`ls /netsim/netsim_dbdir/simdir/netsim/netsimdir/  | grep -i 'EPG'`
+
+OUT_DIR_OSS="/ossrc/data/pms/segment1"
+
+if [ -z "${EPG_SIM_LIST}" ] || [ "${TYPE}" = "NSS" ]; then
+    find ${OUT_ROOT} -name 'A2*.xml*' -mmin +${XML_RETENTION_MIN} -exec rm {} \;
+fi
+
+if [ -z "${EPG_SIM_LIST}" ] || [ "${TYPE}" != "NSS" ]; then
+    find ${OUT_ROOT} -name 'A2*dg2*.xml*' -mmin +${XML_RETENTION_MIN} -exec rm {} \;
+fi
+
+#To Support ECIM nodes stats files as they are not compressed
+
+find ${OUT_ROOT} ! -name '*GPEH.lnk.gz' ! -name '*gpehfile:2.lnk.gz' -a \( -name 'A2*.bin.gz' -o -name 'A2*.lnk.gz' -o -name 'A2*.lnk' -o -name 'A2*_ebs.*' \) -mmin +${BIN_RETENTION_MIN} -exec rm {} \;
+find ${OUT_ROOT} \( -name 'sendfile*' -o -name '*.bcp' -o -name '*tar' -o -name '*rar' \) -mmin +${XML_RETENTION_MIN} -exec rm {} \;
+
+#Handling for oss files
+if [ ${OSS_enabled} == "True" ]; then
+    find ${OUT_DIR_OSS} -name 'A2*.xml*' -mmin +${XML_RETENTION_MIN} -exec rm {} \;
+fi
+
+#Handling for BSC and MSC node type
+find ${SIM_DIR} \( -name *BSC* -o -name *MSC* \) -type d -regex '.*/Ready/.*[STS]*' -mmin +${XML_RETENTION_MIN} -exec rm -rf {} \;
+
+#Handling for FrontHaul node type
+find ${SIM_DIR}/*FrontHaul* -name 'A2*.xml*' -mmin +${XML_RETENTION_MIN} -exec rm {} \;
+
+# SGSN MME files clean up
+if [ ! -z "${MME_SIM_LIST}" ] ; then
+    # check if Time zone is mentioned for SGSN Sims
+    if [ -z "${SGSN_TZ}" ] ; then
+        SGSN_TZ=`date "+%Z"`
+    fi
+    RETENTION_DATE_TIME=`TZ='${SGSN_TZ}' date -d '-'${BIN_RETENTION_MIN}' minutes' +%Y%m%d%H%M`
+    for SIM in ${MME_SIM_LIST}  ; do
+        find ${SIM_DIR}/${SIM} -name 'A2*.xml*' -mmin +${XML_RETENTION_MIN} -exec rm {} \;
+        deletion_list=(`find ${SIM_DIR}/${SIM} \( -name 'B2*_ue_trace.*' -o -name 'A2*_ctum.*' -o -name 'A2*_ebs.*' \)`)
+        for list in ${deletion_list[*]} ; do
+            end_time=$(echo $list | cut -d"/" -f14 | cut -c21-33 | sed 's/\.//')
+            if [[ ${RETENTION_DATE_TIME} -ge ${end_time} ]] ; then
+                rm -f ${list}
+            fi
+        done
+    done
+fi
+
+
+if [ ! -z "${EPG_SIM_LIST}" ] || ([ "${TYPE}" != "NSS" ] && [ "${TYPE}" != "NRM1.2" ]); then
+
+    RETENTION_DATE_TIME=`date -d '-'${XML_RETENTION_MIN}' minutes' +%Y%m%d%H%M`
+
+    for SIM in ${EPG_SIM_LIST}  ; do
+
+        deletion_list=(`find ${OUT_ROOT}/${SIM} \( -name '*_node*' -o -name '*_pgw*' -o -name '*_sgw*' \)`)
+        for list in ${deletion_list[*]} ; do
+            end_date_time=$(echo $list | cut -d"/" -f10 | cut -c2-9,21-24 )
+            end_time=$(echo $list | cut -d"/" -f10 | cut -c21-24 )
+            if [[ "${end_time}" = "0000" ]]; then
+                end_date_time=$(echo $list | cut -d"/" -f10 | cut -c2-9,11-14 )
+            fi
+            if [[ ${RETENTION_DATE_TIME} -ge ${end_date_time} ]] ; then
+                rm -f ${list}
+            fi
+        done
+    done
+fi
+
+
+#GPEH
+expandRncIds() {
+    local INPUT_STR=$1
+    local INPUT_LIST=$(echo ${INPUT_STR} | sed 's/,/ /g')
+    OUTPUT_LIST=""
+    for ENTRY in ${INPUT_LIST} ; do
+    local NUM_PARTS=$(echo ${ENTRY} | awk -F\- '{print NF}')
+    if [ ${NUM_PARTS} -eq 2 ] ; then
+        local INDEX=$(echo ${ENTRY} | awk -F\- '{print $1}')
+        local END=$(echo ${ENTRY} | awk -F\- '{print $2}')
+        while [ ${INDEX} -le ${END} ] ; do
+        OUTPUT_LIST="${OUTPUT_LIST} ${INDEX}"
+        let INDEX=${INDEX}+1
+        done
+    else
+        OUTPUT_LIST="${OUTPUT_LIST} ${ENTRY}"
+    fi
+    done
+
+    echo "${OUTPUT_LIST}"
+}
+
+if [ ! -z "${GPEH_WORKLOAD_LIST}" ] ; then
+    RETENTION_DATE_TIME=`date -u -d '-'${BIN_RETENTION_MIN}' minutes' +%Y%m%d%H%M`
+    PM_DIR="/pms_tmpfs/%s/"
+    SERVER=`hostname`
+
+    RNC_IN_WORKLOAD_LIST=""
+    for WORKLOAD in ${GPEH_WORKLOAD_LIST} ; do
+    RNC_ID_LIST=$(echo ${WORKLOAD} | awk -F: '{print $6}')
+    RNC_ID_LIST=$(expandRncIds "${RNC_ID_LIST}")
+    RNC_ID_LIST=$(expandRncIds "${RNC_ID_LIST}")
+        for RNC_ID in ${RNC_ID_LIST} ; do
+            RNC=$(printf "RNC%02d" ${RNC_ID})
+            RNC_IN_WORKLOAD_LIST="${RNC_IN_WORKLOAD_LIST} ${RNC}"
+        done
+    done
+    RNC_ON_SERVER_LIST=$(getSimListForServer ${SERVER})
+        MATCHED_RNC_LIST=""
+        for RNC_ON_SERVER in ${RNC_ON_SERVER_LIST} ; do
+        echo "${RNC_IN_WORKLOAD_LIST}" | grep -w ${RNC_ON_SERVER} > /dev/null
+        if [ $? -eq 0 ] ; then
+            MATCHED_RNC_LIST="${MATCHED_RNC_LIST} ${RNC_ON_SERVER}"
+        fi
+        done
+    for RNC_HAVING_FILES in ${MATCHED_RNC_LIST} ; do
+    NE_PM_DIR=`printf ${PM_DIR} ${RNC_HAVING_FILES}`
+    file_list=(`find ${NE_PM_DIR} \( -name 'A*_gpehfile:2.lnk.gz' -o -name 'A*_GPEH.lnk.gz*' \)`)
+        for file in ${file_list[@]} ; do
+        START_DATE=`echo $file | cut -d"A" -f2 | cut -d"." -f1`
+        END_TIME=`echo $file | cut -d"-" -f2 | cut -d"_" -f1`
+        START_TIME=`echo $file | cut -d"." -f2 | cut -d"-" -f1`
+        ZERO="0000"
+        if [[ 10#$END_TIME -eq 10#$ZERO ]]; then
+            FILE_DATE=${START_DATE}${START_TIME}
+        else
+            FILE_DATE=${START_DATE}${END_TIME}
+        fi
+
+        if [[ ${RETENTION_DATE_TIME} -ge ${FILE_DATE} ]] ; then
+        rm -rf ${file}
+        fi
+        done
+    done
+fi
+

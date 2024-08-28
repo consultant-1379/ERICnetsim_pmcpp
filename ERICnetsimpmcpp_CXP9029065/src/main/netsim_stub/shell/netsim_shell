@@ -1,0 +1,109 @@
+#!/bin/bash
+
+################################################################################
+# COPYRIGHT Ericsson 2017
+#
+# The copyright to the computer program(s) herein is the property of
+# Ericsson Inc. The programs may be used and/or copied only with written
+# permission from Ericsson Inc. or in accordance with the terms and
+# conditions stipulated in the agreement/contract under which the
+# program(s) have been supplied.
+################################################################################
+
+###################################################
+# Version no    :  OSS
+# Purpose       :  The purpose of this script to replicate the netsim shell
+# Jira No       :  EQEV-44613
+# Gerrit Link   :  https://gerrit.ericsson.se/#/c/2912255
+# Description   :  Created the script as a part of the netsim stub
+# Date          :  14/11/2017
+# Last Modified :  sardana.bhav@tcs.com
+####################################################
+
+
+
+# ********************************************************************
+#
+#   Command Section
+#
+# ********************************************************************
+
+
+
+
+
+# ********************************************************************
+#
+#       Configuration Section
+#
+# ********************************************************************
+
+PYTHON=/usr/local/bin/python2.7
+
+
+BASE_DIR=/netsim
+BIN_DIR=${BASE_DIR}/bin
+ETC_DIR=${BASE_DIR}/etc
+INST_DIR=${BASE_DIR}/inst
+LIB_DIR=${BASE_DIR}/lib
+
+
+
+
+
+show_fn()
+{
+    _show_fn_arg_=$@
+    $PYTHON ${BIN_DIR}/show.py $_show_fn_arg_
+}
+open_fn()
+{
+    _open_fn_arg_=$1
+    $PYTHON ${BIN_DIR}/open.py $_open_fn_arg_
+
+}
+select_fn()
+{
+    _select_fn_arg_=$1
+        $PYTHON ${BIN_DIR}/select_cmd.py $_select_fn_arg_
+}
+dump_mo_tree_fn()
+{
+    _cmd_run_=$@
+    echo $_cmd_run_
+    $PYTHON ${BIN_DIR}/dump_mo_tree.py $_cmd_run_
+}
+
+exit_fn()
+{
+    break
+}
+
+
+
+get_cmd_arg()
+{
+    _usr_input_=$1
+    w=`echo $i | wc -w`
+        if [ $w -gt 1 ];then
+                cmd=`echo $i | cut -d" " -f1`
+                arg=`echo $i | cut -d" " -f2-`
+        else
+                cmd=$i
+        fi
+
+}
+while read i; do
+
+    get_cmd_arg $i
+
+    case $cmd in
+            .show ) show_fn $arg;;
+        .open ) open_fn $arg;;
+        .select ) select_fn $arg;;
+        dumpmotree*) dump_mo_tree_fn $i;;
+        .exit ) exit_fn;;
+        * ) echo "Please answer show or open.";;
+    esac
+done
+

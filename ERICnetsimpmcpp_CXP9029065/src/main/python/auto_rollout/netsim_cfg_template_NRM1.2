@@ -1,0 +1,123 @@
+#!/bin/sh
+
+NSS_RELEASE=${release}
+ENV=VM
+
+<%text>#### DEPLOYMENT TYPE #####</%text>
+TYPE="NRM1.2"
+
+<%text>#### NETSIM SERVERS #####</%text>
+SERVERS="${servers}"
+
+<%text>############ SIMULATION LISTS #############</%text>
+<%text># LTE, SAPC, SPITFIRE, MGW, TCU, RNC LIST</%text>
+${server}_list="${simulation_list}"
+<%text># SGSN MME LIST</%text>
+${server}_mme_list="${mme_list}"
+
+HOST=`hostname`
+HOST_NAME=`echo $HOST | sed s/-/_/g`
+LIST=`eval echo '$'<%text>$</%text>{HOST_NAME}_list`
+<%text># WARNING! COMMENT OUT THIS LINE IF SGSN MME LIST IS EMPTY</%text>
+MME_SIM_LIST=`eval echo '$'<%text>$</%text>{HOST_NAME}_mme_list`
+
+PLAYBACK_SIM_LIST="${playback_sim_list}"
+edeStatsCheck="${edeStatsCheck}"
+
+OSS_enabled="${oss_enabled}"
+
+<%text>######### PREDEFINED SCANNERS ############</%text>
+PREDEFINED_STATS_SCANNER_STATE=SUSPENDED
+
+<%text>############ TIMEZONE SETTINGS ############</%text>
+ROUTER_TZ="UTC-00:00"
+SGSN_TZ="GB-Eire"
+
+
+
+
+<%text>############ ROP INTERVAL ###############</%text>
+STATS_WORKLOAD_LIST="15:ALL"
+RECORDING_WORKLOAD_LIST="15:ALL"
+
+<%text>#### Cell Type setting ####</%text>
+<%text>#### DEFAULT is type C ####</%text>
+netsim_type=continues
+
+<%text>####LIMITBANDWIDTH#####</%text>
+SET_BANDWIDTH_LIMITING=ON
+BANDWIDTH_ERBS=3072
+BANDWIDTH_MSRBS_V2=3072
+BANDWIDTH_MSRBS_V1=3072
+BANDWIDTH_MGW=1024
+BANDWIDTH_ML=192
+BANDWIDTH_SPITFIRE=1024
+NETWORK_DELAY=30
+BANDWIDTH_BSC=400
+
+<%text>########## rmPmFiles retention values########</%text>
+XML_RETENTION=24
+BIN_RETENTION=6
+
+<%text>############ Celltrace and UETRACE file generation############</%text>
+<%text>#FORMAT = <trace filename>:<Sim Name>:<start index>:<Number of nodes>:<UETRACE reference number start index>:<Total number of files></%text>
+LTE_UETRACE_LIST="<%text>$</%text>{LTE_UETRACE_LIST} 600kb_ue_trace.gz:LTE10:1:160:1:160"
+LTE_UETRACE_LIST="<%text>$</%text>{LTE_UETRACE_LIST} 600kb_ue_trace.gz:LTE20:1:160:161:160"
+LTE_UETRACE_LIST="<%text>$</%text>{LTE_UETRACE_LIST} 600kb_ue_trace.gz:LTE30:1:159:321:159"
+LTE_UETRACE_LIST="<%text>$</%text>{LTE_UETRACE_LIST} 2.8MB_ue_trace.gz:LTE30:1:1:480:1"
+<%text>#LTE_CELLTRACE_LIST="celltrace_2250k.bin.gz:1:1 celltrace_750k.bin.gz:1:3"</%text>
+LTE_CELLTRACE_LIST="celltrace_2304K.bin.gz:1:1 celltrace_768K.bin.gz:1:3"
+
+
+<%text>#MSRBS_V2_LTE_CELLTRACE_LIST="celltrace_2250k.bin.gz:1:1 celltrace_750k.bin.gz:1:3"#</%text>
+MSRBS_V2_LTE_CELLTRACE_LIST="celltrace_2304K.bin.gz:1:1 celltrace_768K.bin.gz:1:3"
+MSRBS_V2_LTE_UETRACE_LIST="<%text>$</%text>{MSRBS_V2_LTE_UETRACE_LIST} 600kb_ue_trace.gz:LTE09:1:20:1:20"
+
+MME_UETRACE_LIST="mme_uetrace:FIV1:15"
+MME_CTUM_LIST="mme_ctum:15"
+MME_EBS_FILE_LIST="ebs_1 ebs_2 ebs_3 ebs_4"
+
+
+
+
+<%text>############ 19Mb Celltrace file name ############</%text>
+LTE_CELLTRACE_19MB_FILE="celltrace_19M.bin.gz"
+<%text>########### 19Mb Celltrace file will be generated for this node ############</%text>
+LTE_CELLTRACE_19MB_NODE="LTE01ERBS00001"
+
+<%text>################### PM FILE LOCATIONS ###################</%text>
+% for NE_TYPE, pm_file_path in pm_file_locations.iteritems():
+      <% NE_TYPE = NE_TYPE.replace("-", "_") %> \
+      <% stats_file_path = pm_file_path[0] %> \
+      <% trace_file_path = pm_file_path[1] %>
+      % if stats_file_path != "/c/pm_data/":
+${NE_TYPE}_PM_FileLocation=${stats_file_path}
+      % endif
+      % if trace_file_path != "/c/pm_data/":
+${NE_TYPE}_PMEvent_FileLocation=${trace_file_path}\
+      % endif
+% endfor
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%text>###################### PM DIRECTORY #####################</%text>
+PMDIR="/netsim/genstats"
+
+<%text>########### SGSN-MME FILE COMPRESSION REQUIRED ############</%text>
+MME_FILE_COMP_NEEDED=YES
+
+<%text>########### APPLYING MULTI PROCESSING ############</%text>
+STATS_MAX_CONCURRENT=2
+
+<%text>########### Counter volume for NRM3 and NRM4 deployment ############</%text>
+REQUIRED_COUNTER_VOLUME="${counterVolume}"

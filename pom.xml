@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.ericsson.nms</groupId>
+        <artifactId>integration</artifactId>
+        <version>15.2.0.30</version>
+    </parent>
+    <groupId>com.ericsson.cifwk.netsim</groupId>
+    <artifactId>ERICnetsim_pmcpp</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.374-SNAPSHOT</version>
+    <name>ERICnetsim_pmcpp</name>
+    <url>http://maven.apache.org</url>
+    <modules>
+        <module>ERICnetsimpmcpp_CXP9029065</module>
+        <module>ERICnetsim_pmcpp-jar</module>
+    </modules>
+    <scm>
+        <developerConnection>${ericsson.scm.url}/${project.artifactId}</developerConnection>
+        <connection>${ericsson.scm.url}/${project.artifactId}</connection>
+        <tag>ERICnetsim_pmcpp-1.0.345</tag>
+    </scm>
+</project>

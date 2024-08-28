@@ -1,0 +1,38 @@
+#!/bin/sh
+
+#eniq_stats_cfg
+#This file is responsible for initialization of all input(user-defined) variables required for each NE Type with respect to Stats and Events as one time activity for Playbacker Framework.
+#{} mentioned for variables which user can defined as per requirement.
+#NOTE: Please use # for comment.
+
+###### LIST OF CONSTANTS used in oss simulator ######
+
+#######MSRBS_V2 Variables##############
+LTE_MSRBS_V2_FDN_OSS="SubNetwork=SUBNW-1,MeContext="
+WRAN_MSRBS_V2_FDN_OSS="SubNetwork=SUBNW-1,MeContext="
+LTE_MSRBS_V2_LINK_PATH_OSS="RadioNode/LRAT/"
+WCDMA_MSRBS_V2_LINK_PATH_OSS="RadioNode/WRAT/"
+
+#######MSRBS_V1(MSRBS_V1) Variables##############
+LTE_MSRBS_V1_FDN_OSS="SubNetwork=ONRM_ROOT_MO,SubNetwork=SUBNW-1,MeContext="
+WRAN_MSRBS_V1_FDN_OSS="SubNetwork=ONRM_ROOT_MO,SubNetwork=SUBNW-1,MeContext="
+LTE_MSRBS_V1_LINK_PATH_OSS="Msrbs_V1/LRAT/"
+WCDMA_PRBS_LINK_PATH_OSS="Msrbs_V1/WRAT/"
+
+#######ERBS Variables LTE ##############
+ERBS_FDN_OSS="SubNetwork=ONRM_ROOT_MO,SubNetwork=SUBNW-1,MeContext="
+LTE_ERBS_LINK_PATH_OSS="lterbs/dir1/"
+
+#######MGW Variables##############
+MGW_FDN_OSS="SubNetwork=ONRM_RootMo,SubNetwork=MGW,MeContext=MGw,ManagedElement=1"
+MGW_LINK_PATH_OSS="mgw/dir1/"
+
+#######RNC Variables##############
+RNC_FDN_OSS="SubNetwork=ONRM_ROOT_MO,SubNetwork=RNC_NODE_NAME,MeContext=RNC_NODE_NAME"
+WCDMA_RNC_LINK_PATH_OSS="rnc/dir1/"
+
+#######RNC Variables##############
+RBS_FDN_OSS="SubNetwork=ONRM_ROOT_MO,SubNetwork=RNC_NODE_NAME,MeContext=RBS_NODE_NAME"
+WCDMA_RBS_LINK_PATH_OSS="rbs/dir1/"
+
+#######Link path for all simulations############
